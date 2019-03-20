@@ -8999,7 +8999,7 @@ section .intro_section .slide_description_wrapper {
 
 @media (min-width: 1600px) {
 	.intro_section h2 {
-		font-size: 160px;
+		font-size: 80px;
 	}
 
 	.intro_section h2.small {
