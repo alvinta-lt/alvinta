@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Kontaktai - Alvinta</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<header class="page_header header_white">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell">
+								<a href="./" class="logo top_logo">
+									<img src="images/logo.png" alt="Alvinta">
+								</a>
+							</div>
+
+							<div class="header_mainmenu display_table_cell text-right">
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li>
+											<a href="index.html">Pradžia</a>
+										</li>
+										<li>
+											<a href="apie_mus.html">Apie Mus</a>
+										</li>
+										<li>
+											<a href="paslaugos.html">Paslaugos</a>
+										</li>
+										<li>
+											<a href="prekyba.html">Prekyba</a>
+										</li>
+										<li>
+											<a href="karjera.html">Karjera</a>
+										</li>
+										<li class="active">
+											<a href="kontaktai.html">Kontaktai</a>
+										</li>
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler -->
+								<span class="toggle_menu">
+									<span></span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section style="position:relative" class="ls section_padding_100 page_contact">
+				<div id="gmap"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+							<div class="with_background transp_black_bg with_padding">
+
+								<form class="contact-form row" method="post" action="./">
+
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="name">Full Name
+												<span class="required">*</span>
+											</label>
+											<i class="fa fa-user highlight2" aria-hidden="true"></i>
+											<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Full Name">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="phone">Phone Number
+												<span class="required">*</span>
+											</label>
+											<i class="fa fa-phone highlight2" aria-hidden="true"></i>
+											<input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Phone Number">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="email">Email address
+												<span class="required">*</span>
+											</label>
+											<i class="fa fa-envelope highlight2" aria-hidden="true"></i>
+											<input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email Address">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="subject">Subject
+												<span class="required">*</span>
+											</label>
+											<i class="fa fa-flag highlight2" aria-hidden="true"></i>
+											<input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control" placeholder="Subject">
+										</div>
+									</div>
+									<div class="col-sm-12">
+
+										<div class="contact-form-message form-group">
+											<label for="message">Message</label>
+											<i class="fa fa-comment-o highlight2" aria-hidden="true"></i>
+											<textarea aria-required="true" rows="3" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea>
+										</div>
+									</div>
+
+									<div class="col-sm-12 bottommargin_0">
+
+										<div class="contact-form-submit topmargin_10">
+											<button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button color2 wide_button margin_0">Send message</button>
+										</div>
+									</div>
+
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cs main_color2 section_padding_top_30 section_padding_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-phone"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">01 123 456 789</span>
+									<br>
+									<span class="small-text small-spacing lightgrey">140 Horizon Circle, San Diego, CA</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-clock-o"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">Open Hours</span>
+									<br>
+									<span class="small-text small-spacing lightgrey">Weekdays 8.00-18.00, Sat: closed</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-comment-o"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">Online Support</span>
+									<br>
+									<span class="small-text small-spacing lightgrey"> gogreen@support.com</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="page_footer ds ms bg_image section_padding_50">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-4 col-sm-6 to_animate">
+							<div class="widget_text">
+								<h3 class="widget-title">Why Us?</h3>
+								<p>Consetetur sadipscing elitr, sed dinonumy eirmod tempor ut labore edolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 to_animate">
+							<div class="widget_text">
+								<h3 class="widget-title">Contact Us</h3>
+								<p>PO Box 54321 Some str. 765, Los Angeles, California, United States</p>
+								<ul class="list1 no-bullets">
+									<li>
+										<i class="rt-icon2-device-phone highlight"></i> +12 345 678 9123
+									</li>
+									<li>
+										<i class="rt-icon2-globe-outline highlight"></i> <a href="./">www.company.com</a>
+									</li>
+									<li>
+										<i class="rt-icon2-mail2 highlight"></i> <a href="mailto:info@company.com">info@company.com</a>
+									</li>
+
+								</ul>
+
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 to_animate">
+							<div class="widget_text">
+								<h3 class="widget-title">Stay Connected</h3>
+								<div class="media small-teaser">
+									<div class="media-left media-middle">
+										<a href="#" class="social-icon color-icon border-icon rounded-icon soc-facebook"></a>
+									</div>
+									<div class="media-body media-middle">
+										Facebook
+									</div>
+								</div>
+								<div class="media small-teaser">
+									<div class="media-left media-middle">
+										<a href="#" class="social-icon color-icon border-icon rounded-icon soc-twitter"></a>
+									</div>
+									<div class="media-body media-middle">
+										Twitter
+									</div>
+								</div>
+								<div class="media small-teaser">
+									<div class="media-left media-middle">
+										<a href="#" class="social-icon color-icon border-icon rounded-icon soc-linkedin"></a>
+									</div>
+									<div class="media-body media-middle">
+										LinkedIn
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<section class="page_copyright ls ms section_padding_25 table_section table_section_md with_top_border">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-sm text-center">
+							<p>
+								&copy; Copyright 2019 UAB Alvinta
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+	<!-- Google Map Script -->
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOhbjANPQB4-ul2MhucG22arcKRzYy7kY&callback=initMap"></script>
+	<script>
+		var map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('gmap'), {
+				//,
+				center: {lat: 54.8705453, lng: 23.9522474},
+				zoom: 17
+			});
+		}
+	</script>
+
+</body>
+
+</html>

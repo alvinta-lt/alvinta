@@ -8681,6 +8681,9 @@ section .cs .theme_button:hover {
 	overflow: hidden;
 }
 
+.page_contact {
+	position: relative;
+}
 /* template parallax sections */
 .page_contact.parallax {
 	background-image: url(../img/parallax/progress.jpg);
@@ -13717,4 +13720,13 @@ a.color-icon.border-icon:hover {
 
 .demo-icon a[class*="soc-"]:before {
 	font-size: 24px;
+}
+
+#gmap {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	width: 100%;
 }
