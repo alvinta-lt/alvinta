@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-	<title>Alvinta</title>
+	<title>Kontaktai - Alvinta</title>
 	<meta charset="utf-8">
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -87,23 +87,23 @@
 							<div class="header_mainmenu display_table_cell text-right">
 								<nav class="mainmenu_wrapper">
 									<ul class="mainmenu nav sf-menu">
-										<li class="active">
+										<li>
 											<a href="./">Pradžia</a>
 										</li>
 										<li>
-											<a href="./apie-mus">Apie Mus</a>
+											<a href="./apie-mus.html">Apie Mus</a>
+										</li>
+										<li>
+											<a href="./paslaugos.html">Paslaugos</a>
+										</li>
+										<li>
+											<a href="./prekyba.html">Prekyba</a>
+										</li>
+										<li>
+											<a href="./karjera.html">Karjera</a>
 										</li>
 										<li class="active">
-											<a href="./paslaugos">Paslaugos</a>
-										</li>
-										<li>
-											<a href="./prekyba">Prekyba</a>
-										</li>
-										<li>
-											<a href="./karjera">Karjera</a>
-										</li>
-										<li>
-											<a href="./kontaktai">Kontaktai</a>
+											<a href="./kontaktai.html">Kontaktai</a>
 										</li>
 									</ul>
 								</nav>
@@ -117,32 +117,119 @@
 					</div>
 				</div>
 			</header>
-
-			<section class="ls section_padding_top_100 section_padding_bottom_100">
+			<section style="position:relative" class="ls section_padding_100 page_contact">
+				<div id="gmap"></div>
 				<div class="container">
-					<div class="row columns_padding_25 columns_margin_bottom_20">
-						<div class="col-md-6">
-							<img src="images/gallery/05.jpg" alt="">
-						</div>
-						<div class="col-md-6">
-							<h2 class="section_header with_icon">
-								Computer Resale
-							</h2>
-							<p>
-					Ground round pancetta flank venison sausage turducken pork andouille ham alcatra. Corned beef t-bone brisket alcatra tenderloin jerky meatball meatloaf shank beef ribs hamburger pork chop. Sausage pork chop pork belly.
-				</p>
-							<ul class="list2 grey bottommargin_0">
-								<li>Meatloaf ground round andouille chic</li>
-								<li>Bacon landjaeger kielbasa ham hock</li>
-								<li>Sirloin frankfurter biltong pig salami</li>
-							</ul>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+							<div class="with_background transp_black_bg with_padding">
+
+								<form class="contact-form row" method="post" action="./">
+
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="name">Full Name
+												<span class="required">*</span>
+											</label>
+											<i class="fa fa-user highlight2" aria-hidden="true"></i>
+											<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Full Name">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="phone">Phone Number
+												<span class="required">*</span>
+											</label>
+											<i class="fa fa-phone highlight2" aria-hidden="true"></i>
+											<input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Phone Number">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="email">Email address
+												<span class="required">*</span>
+											</label>
+											<i class="fa fa-envelope highlight2" aria-hidden="true"></i>
+											<input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email Address">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="subject">Subject
+												<span class="required">*</span>
+											</label>
+											<i class="fa fa-flag highlight2" aria-hidden="true"></i>
+											<input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control" placeholder="Subject">
+										</div>
+									</div>
+									<div class="col-sm-12">
+
+										<div class="contact-form-message form-group">
+											<label for="message">Message</label>
+											<i class="fa fa-comment-o highlight2" aria-hidden="true"></i>
+											<textarea aria-required="true" rows="3" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea>
+										</div>
+									</div>
+
+									<div class="col-sm-12 bottommargin_0">
+
+										<div class="contact-form-submit topmargin_10">
+											<button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button color2 wide_button margin_0">Send message</button>
+										</div>
+									</div>
+
+								</form>
+
+							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+
+			<section class="cs main_color2 section_padding_top_30 section_padding_bottom_30">
+				<div class="container">
 					<div class="row">
-						<div class="col-sm-12">
-							<p>
-					Venison burgdoggen meatloaf, jerky filet mignon drumstick beef ribs turducken boudin. Ribeye strip steak shoulder, salami pork jowl prosciutto pork chop boudin turkey corned beef. Andouille biltong ribeye chuck ball tip brisket turducken ground round, kevin turkey ham. Picanha chicken t-bone, boudin tail doner capicola drumstick flank shoulder hamburger short ribs.
-				</p>
+						<div class="col-md-4 col-sm-6">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-phone"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">01 123 456 789</span>
+									<br>
+									<span class="small-text small-spacing lightgrey">140 Horizon Circle, San Diego, CA</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-clock-o"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">Open Hours</span>
+									<br>
+									<span class="small-text small-spacing lightgrey">Weekdays 8.00-18.00, Sat: closed</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-comment-o"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">Online Support</span>
+									<br>
+									<span class="small-text small-spacing lightgrey"> gogreen@support.com</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -233,6 +320,17 @@
 
 <script src="js/compressed.js"></script>
 <script src="js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOhbjANPQB4-ul2MhucG22arcKRzYy7kY&callback=initMap"></script>
+<script>
+	var map;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('gmap'), {
+			//,
+			center: {lat: 54.8705453, lng: 23.9522474},
+			zoom: 17
+		});
+	}
+</script>
 
 </body>
 </html>
