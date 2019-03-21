@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-	<title>Karjera - Alvinta</title>
+	<title>Alvinta</title>
 	<meta charset="utf-8">
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,7 +79,7 @@
 					<div class="row">
 						<div class="col-sm-12 display_table">
 							<div class="header_left_logo display_table_cell">
-								<a href="./" class="logo top_logo">
+								<a href="/" class="logo top_logo">
 									<img src="images/logo.png" alt="Alvinta">
 								</a>
 							</div>
@@ -88,22 +88,22 @@
 								<nav class="mainmenu_wrapper">
 									<ul class="mainmenu nav sf-menu">
 										<li class="active">
-											<a href="index.html">Pradžia</a>
+											<a href="/">Pradžia</a>
 										</li>
 										<li>
-											<a href="apie_mus.html">Apie Mus</a>
+											<a href="/apie-mus">Apie Mus</a>
 										</li>
 										<li class="active">
-											<a href="paslaugos.html">Paslaugos</a>
+											<a href="/paslaugos">Paslaugos</a>
 										</li>
 										<li>
-											<a href="prekyba.html">Prekyba</a>
+											<a href="/prekyba">Prekyba</a>
 										</li>
 										<li>
-											<a href="karjera.html">Karjera</a>
+											<a href="/karjera">Karjera</a>
 										</li>
 										<li>
-											<a href="kontaktai.html">Kontaktai</a>
+											<a href="/kontaktai">Kontaktai</a>
 										</li>
 									</ul>
 								</nav>
@@ -120,19 +120,31 @@
 
 			<section class="ls section_padding_top_100 section_padding_bottom_100">
 				<div class="container">
-					<h3>Karjera</h3>
-
-					<p>
-						<strong>UAB “Alvinta”</strong> visuomet laukia energingų, kūrybingų, perspektyvių, žmonių pasiūlymų dėl darbo
-						mūsų įmonėje. Jei manote, kad Jūsų vieta gali būti tarp mūsų ir galite būti naudingas įmonei,
-						– susipažinkime!
-					</p>
-
-					<p>
-						Gyvenimo aprašymus, motyvacinius laiškus ar savo idėjas siųskite el. paštu
-						<a href="mailto:info@alvinta.lt">info@alvinta.lt</a> arba kreipkitės telefonu
-						Kaune. <a href="tel:+37037300817">8 37 300816</a>
-					</p>
+					<div class="row columns_padding_25 columns_margin_bottom_20">
+						<div class="col-md-6">
+							<img src="images/gallery/05.jpg" alt="">
+						</div>
+						<div class="col-md-6">
+							<h2 class="section_header with_icon">
+								Computer Resale
+							</h2>
+							<p>
+					Ground round pancetta flank venison sausage turducken pork andouille ham alcatra. Corned beef t-bone brisket alcatra tenderloin jerky meatball meatloaf shank beef ribs hamburger pork chop. Sausage pork chop pork belly.
+				</p>
+							<ul class="list2 grey bottommargin_0">
+								<li>Meatloaf ground round andouille chic</li>
+								<li>Bacon landjaeger kielbasa ham hock</li>
+								<li>Sirloin frankfurter biltong pig salami</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>
+					Venison burgdoggen meatloaf, jerky filet mignon drumstick beef ribs turducken boudin. Ribeye strip steak shoulder, salami pork jowl prosciutto pork chop boudin turkey corned beef. Andouille biltong ribeye chuck ball tip brisket turducken ground round, kevin turkey ham. Picanha chicken t-bone, boudin tail doner capicola drumstick flank shoulder hamburger short ribs.
+				</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -219,10 +231,8 @@
 	</div>
 	<!-- eof #canvas -->
 
-	<script src="js/compressed.js"></script>
-	<script src="js/main.js"></script>
-
+<script src="js/compressed.js"></script>
+<script src="js/main.js"></script>
 
 </body>
-
 </html>

@@ -79,7 +79,7 @@
 					<div class="row">
 						<div class="col-sm-12 display_table">
 							<div class="header_left_logo display_table_cell">
-								<a href="./" class="logo top_logo">
+								<a href="/" class="logo top_logo">
 									<img src="images/logo.png" alt="Alvinta">
 								</a>
 							</div>
@@ -88,22 +88,22 @@
 								<nav class="mainmenu_wrapper">
 									<ul class="mainmenu nav sf-menu">
 										<li class="active">
-											<a href="index.html">Pradžia</a>
+											<a href="/">Pradžia</a>
 										</li>
 										<li>
-											<a href="apie_mus.html">Apie Mus</a>
+											<a href="/apie-mus">Apie Mus</a>
 										</li>
 										<li>
-											<a href="paslaugos.html">Paslaugos</a>
+											<a href="/paslaugos">Paslaugos</a>
 										</li>
 										<li>
-											<a href="prekyba.html">Prekyba</a>
+											<a href="/prekyba">Prekyba</a>
 										</li>
 										<li>
-											<a href="karjera.html">Karjera</a>
+											<a href="/karjera">Karjera</a>
 										</li>
 										<li>
-											<a href="kontaktai.html">Kontaktai</a>
+											<a href="/kontaktai">Kontaktai</a>
 										</li>
 									</ul>
 								</nav>
@@ -438,12 +438,12 @@
 								</div>
 								<div class="item-content">
 									<h4 class="entry-title">
-										<a href="service-single.html">Hard Drive, Flash Drive &amp; SSD Destruction</a>
+										<a href="/service-single">Hard Drive, Flash Drive &amp; SSD Destruction</a>
 									</h4>
 									<p class="margin_0">
 							Clients can simply schedule their hard drive destruction online and through our website.
 						</p>
-									<a href="service-single.html" class="read-more"></a>
+									<a href="service-single" class="read-more"></a>
 								</div>
 							</article>
 						</div>
@@ -454,12 +454,12 @@
 								</div>
 								<div class="item-content">
 									<h4 class="entry-title">
-										<a href="service-single.html">Electronic Waste Collection &amp; Recycling</a>
+										<a href="/service-single">Electronic Waste Collection &amp; Recycling</a>
 									</h4>
 									<p class="margin_0">
 							Users quickly replace their electronic devices with newer, faster &amp; stronger gadgets on the market.
 						</p>
-									<a href="service-single.html" class="read-more"></a>
+									<a href="/service-single" class="read-more"></a>
 								</div>
 							</article>
 						</div>
@@ -470,19 +470,19 @@
 								</div>
 								<div class="item-content">
 									<h4 class="entry-title">
-										<a href="service-single.html">Electronics &amp; Computer Resale</a>
+										<a href="/service-single">Electronics &amp; Computer Resale</a>
 									</h4>
 									<p class="margin_0">
 							Buyers are welcome to leave their best offer on available electronic products.
 						</p>
-									<a href="service-single.html" class="read-more"></a>
+									<a href="/service-single" class="read-more"></a>
 								</div>
 							</article>
 						</div>
 					</div>
 					<div class="row topmargin_30">
 						<div class="col-sm-12 text-center">
-							<a href="paslaugos.html" class="theme_button wide_button color1">
+							<a href="/paslaugos" class="theme_button wide_button color1">
 								Visos Paslaugos
 							</a>
 						</div>
@@ -623,7 +623,7 @@
 					</div>
 					<div class="row topmargin_30">
 						<div class="col-sm-12 text-center">
-							<a href="duk.html" class="theme_button color1 wide_button">
+							<a href="/duk" class="theme_button color1 wide_button">
 								Visi Klausimai
 							</a>
 						</div>
@@ -830,10 +830,6 @@
 
 	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
-
-
-	<!-- Google Map Script -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script>
 </body>
 
 </html>

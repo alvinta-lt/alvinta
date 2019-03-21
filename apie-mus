@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-	<title>GoGreen</title>
+	<title>Apie mus - Alvinta</title>
 	<meta charset="utf-8">
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,7 +79,7 @@
 					<div class="row">
 						<div class="col-sm-12 display_table">
 							<div class="header_left_logo display_table_cell">
-								<a href="./" class="logo top_logo">
+								<a href="/" class="logo top_logo">
 									<img src="images/logo.png" alt="Alvinta">
 								</a>
 							</div>
@@ -87,23 +87,23 @@
 							<div class="header_mainmenu display_table_cell text-right">
 								<nav class="mainmenu_wrapper">
 									<ul class="mainmenu nav sf-menu">
+										<li>
+											<a href="/">Pradžia</a>
+										</li>
 										<li class="active">
-											<a href="index.html">Pradžia</a>
+											<a href="/apie-mus">Apie Mus</a>
 										</li>
 										<li>
-											<a href="apie_mus.html">Apie Mus</a>
+											<a href="/paslaugos">Paslaugos</a>
 										</li>
 										<li>
-											<a href="#">Paslaugos</a>
+											<a href="/prekyba">Prekyba</a>
 										</li>
 										<li>
-											<a href="gallery-regular.html">Prekyba</a>
+											<a href="/karjera">Karjera</a>
 										</li>
 										<li>
-											<a href="blog-right.html">Karjera</a>
-										</li>
-										<li>
-											<a href="kontaktai.html">Kontaktai</a>
+											<a href="/kontaktai">Kontaktai</a>
 										</li>
 									</ul>
 								</nav>
@@ -120,31 +120,26 @@
 
 			<section class="ls section_padding_top_100 section_padding_bottom_100">
 				<div class="container">
-					<div class="row columns_padding_25 columns_margin_bottom_20">
-						<div class="col-md-6">
-							<img src="images/gallery/05.jpg" alt="">
-						</div>
-						<div class="col-md-6">
-							<h2 class="section_header with_icon">
-								Computer Resale
-							</h2>
-							<p>
-					Ground round pancetta flank venison sausage turducken pork andouille ham alcatra. Corned beef t-bone brisket alcatra tenderloin jerky meatball meatloaf shank beef ribs hamburger pork chop. Sausage pork chop pork belly.
-				</p>
-							<ul class="list2 grey bottommargin_0">
-								<li>Meatloaf ground round andouille chic</li>
-								<li>Bacon landjaeger kielbasa ham hock</li>
-								<li>Sirloin frankfurter biltong pig salami</li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<p>
-					Venison burgdoggen meatloaf, jerky filet mignon drumstick beef ribs turducken boudin. Ribeye strip steak shoulder, salami pork jowl prosciutto pork chop boudin turkey corned beef. Andouille biltong ribeye chuck ball tip brisket turducken ground round, kevin turkey ham. Picanha chicken t-bone, boudin tail doner capicola drumstick flank shoulder hamburger short ribs.
-				</p>
-						</div>
-					</div>
+					<h3>Apie Mus</h3>
+					<p>
+						<strong>UAB “Alvinta”</strong> įkurta 2005 metais. Įmonė daugiau kaip 11 metų gilinasi į pagrindines bei
+						nekasdienines aplinkosaugines problemas ir yra subūrusi profesionalų kolektyvą. Šiandien
+						įmonėje dirba aplinkos apsaugos srities specialistai bei darbuotojai, turintys didelę pavojingų
+						ir nepavojingų atliekų tvarkymo patirtį. Pasitelkę ilgametę patirtį bei jaunatvišką veržlumą,
+						bendradarbiaujant su universitetais ir laboratorijomis mes galime padėti išspręsti bet kokią
+						problemą aplinkos apsaugos srityje.
+					</p>
+					<strong>Pagrindinės mūsų teikiamos paslaugos:</strong>
+					<ul>
+						<li>Nepavojingų ir pavojingų atliekų surinkimas, išvežimas ir tvarkymas</li>
+						<li>Atliekų identifikavimas, pakavimas, ženklinimas</li>
+						<li>Konsultacijos aplinkos apsaugos klausimais, aplinkos apsaugos būklės auditas</li>
+						<li>GPAIS konsultacijos bei administravimas</li>
+						<li>Riebalų, naftos, buitinių nuotekų išsiurbimas bei išvežimas</li>
+						<li>Paraiškų TIPK ir Taršos leidimams gauti rengimas bei derinimas.</li>
+						<li>Poveikio aplinkai vertinimas ir atranka (PAV)</li>
+						<li>Prekyba sorbentais, įvairios paskirties valikliais</li>
+					</ul>
 				</div>
 			</section>
 
@@ -231,10 +226,8 @@
 	</div>
 	<!-- eof #canvas -->
 
-	<script src="js/compressed.js"></script>
-	<script src="js/main.js"></script>
-
+<script src="js/compressed.js"></script>
+<script src="js/main.js"></script>
 
 </body>
-
 </html>
