@@ -322,10 +322,13 @@
 							<h2 class="section_header with_icon">
 								Užsakyti atliekų išvežimą
 							</h2>
-							<form class="contact-form row columns_margin_bottom_20" method="post" action="./">
+							<form method="post" action="https://mailthis.to/info@alvinta.lt" class="contact-form row columns_margin_bottom_20">
+								<input type="hidden" name="_honeypot" value="">
+								<input type="hidden" name="_subject" value="Atliekų išvežimo užsakymas">
+								<input type="hidden" name="_after" value="https://alvinta.lt/">
+								<input type="hidden" name="_confirmation" value="Jūsų informacija gauta. Susisieksime su Jumis artimiausiu metu.">
 
-
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<div class="form-group">
 										<label for="pickup-name">
                                             Jūsų vardas, pavardė
@@ -335,7 +338,7 @@
 										<input type="text" aria-required="true" size="30" value="" name="name" id="pickup-name" class="form-control" placeholder="Jūsų vardas, pavardė">
 									</div>
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<div class="form-group">
 										<label for="pickup-phone">
                                             Telefono numeris
@@ -345,7 +348,17 @@
 										<input type="text" aria-required="true" size="30" value="" name="phone" id="pickup-phone" class="form-control" placeholder="Telefono numeris">
 									</div>
 								</div>
-								<div class="col-md-2">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="pickup-email">
+											El. Pašto adresas
+											<span class="required">*</span>
+										</label>
+										<i class="fa fa-envelope highlight2" aria-hidden="true"></i>
+										<input type="email" aria-required="true" size="30" value="" name="_replyto" id="pickup-email" class="form-control" placeholder="El. Pašto adresas">
+									</div>
+								</div>
+								<div class="col-md-3">
 									<div class="form-group select-group">
 										<label for="pickup-date">
                                             Pageidaujama atliekų paėmimo data
@@ -355,7 +368,7 @@
 										<input type="text" data-input-type="date" aria-required="true" size="30" value="" name="date" id="pickup-date" class="form-control" placeholder="Data">
 									</div>
 								</div>
-								<div class="col-md-2">
+								<div class="col-md-3">
 									<div class="form-group select-group">
 										<label for="pickup-time">
 											<span class="required">*</span>
@@ -369,7 +382,7 @@
 									<div class="form-group">
 										<label for="pickup-message">message</label>
 										<i class="fa fa-comment-o highlight2" aria-hidden="true"></i>
-										<textarea aria-required="true" rows="3" cols="45" name="Pageidaujamų išvežti atliekų sąrašas, preliminarus kiekis, atliekų buvimo vieta ir kt. Jūsų nuomone svarbi informacija" id="pickup-message" class="form-control" placeholder="Pageidaujamų išvežti atliekų sąrašas, preliminarus kiekis, atliekų buvimo vieta ir kt. Jūsų nuomone svarbi informacija"></textarea>
+										<textarea aria-required="true" rows="3" cols="45" name="message" id="pickup-message" class="form-control" placeholder="Pageidaujamų išvežti atliekų sąrašas, preliminarus kiekis, atliekų buvimo vieta ir kt. Jūsų nuomone svarbi informacija"></textarea>
 									</div>
 								</div>
 
@@ -796,6 +809,11 @@
 
 	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
+<script>
+(function () {
+  document.querySelector('input[name="_after"]').value = window.location.href;
+})();
+</script>
 </body>
 
 </html>
