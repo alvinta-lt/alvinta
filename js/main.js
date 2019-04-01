@@ -1,6 +1,17 @@
-"use strict";
-//Wrapping all JavaScript code into a IIFE function for prevent global variables creation
-(function(){
+'use strict';
+
+(function() {
+
+	var touchDevice = ('ontouchstart' in document.documentElement);
+	if (touchDevice) {
+		var inputElements = document.querySelectorAll('[data-input-type]');
+		for (var i = 0; i < inputElements.length; i++) {
+			// Change input types to defined via attribute if current device supports touch.
+			// This is to use native input types on mobile/tablets for better UX.
+			// On date/time inputs placeholder is hidden so it's ok to use input="text".
+			inputElements[i].type = inputElements[i].getAttribute('data-input-type');
+		}
+	}
 
 var $body = jQuery('body');
 var $window = jQuery(window);
@@ -8,7 +19,7 @@ var $window = jQuery(window);
 //hidding menu elements that do not fit in menu width
 //processing center logo
 function menuHideExtraElements() {
-	
+
 	//cleaneng changed elements
 	jQuery('.sf-more-li, .sf-logo-li').remove();
 	var windowWidth = jQuery('body').innerWidth();
