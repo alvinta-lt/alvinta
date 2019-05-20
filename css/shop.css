@@ -80,6 +80,14 @@ input[disabled] {
 	}
 }
 
+.product .item-media {
+  height: 260px;
+}
+
+.product .item-media img {
+  object-fit: contain;
+}
+
 .product .images,
 .product .thumbnails a,
 .product .item-media {
