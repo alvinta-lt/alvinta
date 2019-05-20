@@ -6,21 +6,6 @@ input[disabled] {
 	cursor: not-allowed;
 }
 
-/* sort panel */
-.shop-sorting {
-	line-height: 1;
-	margin-bottom: 40px;
-}
-
-.shop-sorting label {
-	padding-right: 10px;
-}
-
-.shop-sorting .form-inline .form-control {
-	width: 250px;
-	max-width: 100%;
-}
-
 .woocommerce-ordering {
 	display: inline-block;
 }
