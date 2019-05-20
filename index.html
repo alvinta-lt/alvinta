@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
-
 <head>
 	<title>Nepavojingų ir pavojingų atliekų tvarkymas - Alvinta</title>
 	<meta charset="utf-8">
@@ -22,684 +21,638 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
-	<!--[if lt IE 9]>
-		<script src="js/vendor/html5shiv.min.js"></script>
-		<script src="js/vendor/respond.min.js"></script>
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-	<![endif]-->
-
 </head>
 
 <body>
-	<!--[if lt IE 9]>
-		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
-	<![endif]-->
 
-	<div class="preloader">
-		<div class="preloader_image"></div>
-	</div>
+<div class="preloader">
+  <div class="preloader_image"></div>
+</div>
+<div id="canvas">
+  <div id="box_wrapper">
+    <header class="page_header header_white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 display_table">
+            <div class="header_left_logo display_table_cell">
+              <a href="./" class="logo top_logo">
+                <img src="images/logo.png" alt="Alvinta">
+              </a>
+            </div>
 
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">
-				<i class="rt-icon2-cross2"></i>
-			</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form form-inline" action="./">
-				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-				</div>
-				<button type="submit" class="theme_button">Search</button>
-			</form>
-		</div>
-	</div>
+            <div class="header_mainmenu display_table_cell text-right">
+              <nav class="mainmenu_wrapper">
+                <ul class="mainmenu nav sf-menu">
+                  <li class="active">
+                    <a href="./">Pradžia</a>
+                  </li>
+                  <li>
+                    <a href="./apie-mus">Apie Mus</a>
+                  </li>
+                  <li>
+                    <a href="./paslaugos">Paslaugos</a>
+                  </li>
+                  <li>
+                    <a href="./prekyba">Prekyba</a>
+                  </li>
+                  <li>
+                    <a href="./karjera">Karjera</a>
+                  </li>
+                  <li>
+                    <a href="./kontaktai">Kontaktai</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- eof main nav -->
+              <!-- header toggler -->
+              <span class="toggle_menu">
+                <span></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls with_padding">
-			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-			<!--
-		<ul class="list-unstyled">
-			<li>Message To User</li>
-		</ul>
-		-->
+    <section class="ds section_padding_top_15 section_padding_bottom_15 table_section section_bottom_overlap">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9 col-sm-8 text-center text-sm-left">
+            <div class="media small-teaser teaser inline-block">
+              <div class="media-left media-middle">
+                <div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+                  <i class="fa fa-phone"></i>
+                </div>
+              </div>
+              <div class="media-body media-middle">
+                <span class="fontsize_20 medium grey">8 37 300 816</span>
+                <br>
+                <span class="small-text small-spacing">Drobės g. 66, Kaunas LT-45181</span>
+              </div>
+            </div>
+            <div class="media small-teaser teaser inline-block">
+              <div class="media-left media-middle">
+                <div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+                  <i class="fa fa-clock-o"></i>
+                </div>
+              </div>
+              <div class="media-body media-middle">
+                <span class="fontsize_20 medium grey">Darbo laikas:</span>
+                <br>
+                <span class="small-text small-spacing">Darbo dienomis 8.00-18.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 text-center text-sm-right">
+            <a href="#pickup" class="theme_button color2 margin_0">Užsakyti atliekų išvežimą</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		</div>
-	</div>
-	<!-- eof .modal -->
+    <section class="intro_section page_mainslider ds">
+      <div class="flexslider" data-dots="false">
+        <ul class="slides">
 
-	<!-- wrappers for visual page editor and boxed version of template -->
-	<div id="canvas">
-		<div id="box_wrapper">
-			<header class="page_header header_white">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 display_table">
-							<div class="header_left_logo display_table_cell">
-								<a href="./" class="logo top_logo">
-									<img src="images/logo.png" alt="Alvinta">
-								</a>
-							</div>
+          <li>
+            <img src="images/slide01.jpg" alt="">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <div class="slide_description_wrapper">
+                    <div class="slide_description">
 
-							<div class="header_mainmenu display_table_cell text-right">
-								<nav class="mainmenu_wrapper">
-									<ul class="mainmenu nav sf-menu">
-										<li class="active">
-											<a href="./">Pradžia</a>
-										</li>
-										<li>
-											<a href="./apie-mus">Apie Mus</a>
-										</li>
-										<li>
-											<a href="./paslaugos">Paslaugos</a>
-										</li>
-										<li>
-											<a href="./prekyba">Prekyba</a>
-										</li>
-										<li>
-											<a href="./karjera">Karjera</a>
-										</li>
-										<li>
-											<a href="./kontaktai">Kontaktai</a>
-										</li>
-									</ul>
-								</nav>
-								<!-- eof main nav -->
-								<!-- header toggler -->
-								<span class="toggle_menu">
-									<span></span>
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
+                      <div class="intro-layer" data-animation="fadeInRight">
+                        <h2>
+                          Atliekų tvarkymo paslaugos visoje Lietuvoje
+                        </h2>
+                      </div>
+                      <div class="intro-layer" data-animation="fadeInRight">
+                        <p>Jau daugiau nei 14 metų kuriame švaresnę ir saugesnę Lietuvą. Prisijunkite prie mūsų - prisidėkite prie mūsų darnios ateities kūrimo.</p>
+                        <a href="./apie-mus" class="theme_button color1">Daugiau apie mus</a>
+                      </div>
+                    </div>
+                    <!-- eof .slide_description -->
+                  </div>
+                  <!-- eof .slide_description_wrapper -->
+                </div>
+                <!-- eof .col-* -->
+              </div>
+              <!-- eof .row -->
+            </div>
+            <!-- eof .container -->
+          </li>
 
-			<section class="ds section_padding_top_15 section_padding_bottom_15 table_section section_bottom_overlap">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-9 col-sm-8 text-center text-sm-left">
-							<div class="media small-teaser teaser inline-block">
-								<div class="media-left media-middle">
-									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
-										<i class="fa fa-phone"></i>
-									</div>
-								</div>
-								<div class="media-body media-middle">
-									<span class="fontsize_20 medium grey">8 37 300 816</span>
-									<br>
-									<span class="small-text small-spacing">Drobės g. 66, Kaunas LT-45181</span>
-								</div>
-							</div>
-							<div class="media small-teaser teaser inline-block">
-								<div class="media-left media-middle">
-									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
-										<i class="fa fa-clock-o"></i>
-									</div>
-								</div>
-								<div class="media-body media-middle">
-									<span class="fontsize_20 medium grey">Darbo laikas:</span>
-									<br>
-									<span class="small-text small-spacing">Darbo dienomis 8.00-18.00</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-4 text-center text-sm-right">
-							<a href="#pickup" class="theme_button color2 margin_0">Užsakyti atliekų išvežimą</a>
-						</div>
-					</div>
-				</div>
-			</section>
+          <li>
+            <img src="images/slide02.jpg" alt="">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <div class="slide_description_wrapper">
+                    <div class="slide_description">
+                      <div class="intro-layer" data-animation="fadeInRight">
+                        <h2 class="small">
+                          Tausokime mūsų išteklius
+                        </h2>
+                      </div>
+                      <div class="intro-layer" data-animation="fadeInRight">
+                        <p>Jei neįmanoma išvengti atliekų susidarymo, pirmumo teisę teikiame atliekų antrinio panaudojimo ar perdirbimo technologijų taikymui.<br>Taip prailginsime medžiagų būvio ciklą ir prisidėsime prie žiedinės ekonomikos.</p>
+                        <a href="./paslaugos" class="theme_button color1">Mūsų teikiamos paslaugos</a>
+                      </div>
+                    </div>
+                    <!-- eof .slide_description -->
+                  </div>
+                  <!-- eof .slide_description_wrapper -->
+                </div>
+                <!-- eof .col-* -->
+              </div>
+              <!-- eof .row -->
+            </div>
+            <!-- eof .container -->
+          </li>
 
-			<section class="intro_section page_mainslider ds">
-				<div class="flexslider" data-dots="false">
-					<ul class="slides">
+          <li>
+            <img src="images/slide03.jpg" alt="">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <div class="slide_description_wrapper">
+                    <div class="slide_description">
 
-						<li>
-							<img src="images/slide01.jpg" alt="">
-							<div class="container">
-								<div class="row">
-									<div class="col-sm-12 text-center">
-										<div class="slide_description_wrapper">
-											<div class="slide_description">
-							
-												<div class="intro-layer" data-animation="fadeInRight">
-													<h2>
-														Atliekų tvarkymo paslaugos visoje Lietuvoje
-													</h2>
-												</div>
-												<div class="intro-layer" data-animation="fadeInRight">
-													<p>Jau daugiau nei 14 metų kuriame švaresnę ir saugesnę Lietuvą. Prisijunkite prie mūsų - prisidėkite prie mūsų darnios ateities kūrimo.</p>
-													<a href="./apie-mus" class="theme_button color1">Daugiau apie mus</a>
-												</div>
-											</div>
-											<!-- eof .slide_description -->
-										</div>
-										<!-- eof .slide_description_wrapper -->
-									</div>
-									<!-- eof .col-* -->
-								</div>
-								<!-- eof .row -->
-							</div>
-							<!-- eof .container -->
-						</li>
+                      <div class="intro-layer" data-animation="fadeInRight">
+                        <h2>
+                          Mes prisidedame prie žiedinės ekonomikos įgyvendnimo
+                        </h2>
+                      </div>
+                      <div class="intro-layer" data-animation="fadeInRight">
+                        <p>Visuomet konsultuojame savo klientus atliekų prevencijos bei antrinio panaudojimo klausimais.
+                        Tai leidžia sumažinti daromą neigiamą poveikį aplinkai, patenkančių į sąvartynus atliekų kiekį bei CO2 emisijas. </p>
+                        <a href="./kontaktai" class="theme_button color1">Susisiekite su mumis</a>
+                      </div>
+                    </div>
+                    <!-- eof .slide_description -->
+                  </div>
+                  <!-- eof .slide_description_wrapper -->
+                </div>
+                <!-- eof .col-* -->
+              </div>
+              <!-- eof .row -->
+            </div>
+            <!-- eof .container -->
+          </li>
 
-						<li>
-							<img src="images/slide02.jpg" alt="">
-							<div class="container">
-								<div class="row">
-									<div class="col-sm-12 text-center">
-										<div class="slide_description_wrapper">
-											<div class="slide_description">
-												<div class="intro-layer" data-animation="fadeInRight">
-													<h2 class="small">
-														Tausokime mūsų išteklius
-													</h2>
-												</div>
-												<div class="intro-layer" data-animation="fadeInRight">
-													<p>Jei neįmanoma išvengti atliekų susidarymo, pirmumo teisę teikiame atliekų antrinio panaudojimo ar perdirbimo technologijų taikymui.<br>Taip prailginsime medžiagų būvio ciklą ir prisidėsime prie žiedinės ekonomikos.</p>
-													<a href="./paslaugos" class="theme_button color1">Mūsų teikiamos paslaugos</a>
-												</div>
-											</div>
-											<!-- eof .slide_description -->
-										</div>
-										<!-- eof .slide_description_wrapper -->
-									</div>
-									<!-- eof .col-* -->
-								</div>
-								<!-- eof .row -->
-							</div>
-							<!-- eof .container -->
-						</li>
+        </ul>
+      </div>
+      <!-- eof flexslider -->
 
-						<li>
-							<img src="images/slide03.jpg" alt="">
-							<div class="container">
-								<div class="row">
-									<div class="col-sm-12 text-center">
-										<div class="slide_description_wrapper">
-											<div class="slide_description">
-			
-												<div class="intro-layer" data-animation="fadeInRight">
-													<h2>
-														Mes prisidedame prie žiedinės ekonomikos įgyvendnimo
-													</h2>
-												</div>
-												<div class="intro-layer" data-animation="fadeInRight">
-													<p>Visuomet konsultuojame savo klientus atliekų prevencijos bei antrinio panaudojimo klausimais. 
-													Tai leidžia sumažinti daromą neigiamą poveikį aplinkai, patenkančių į sąvartynus atliekų kiekį bei CO2 emisijas. </p>
-													<a href="./kontaktai" class="theme_button color1">Susisiekite su mumis</a>
-												</div>
-											</div>
-											<!-- eof .slide_description -->
-										</div>
-										<!-- eof .slide_description_wrapper -->
-									</div>
-									<!-- eof .col-* -->
-								</div>
-								<!-- eof .row -->
-							</div>
-							<!-- eof .container -->
-						</li>
+      <div class="scroll_button_wrap">
+        <a href="#about" class="scroll_button">
+          <span class="sr-only">scroll down</span>
+        </a>
+      </div>
+    </section>
 
-					</ul>
-				</div>
-				<!-- eof flexslider -->
+    <section id="about" class="ls section_padding_top_100 section_padding_bottom_150">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+            <h2 class="section_header with_icon">
+            <!--Alvinta -->
+            </h2>
+            <p class="small-text grey">Trumpai apie mus</p>
+            <p class="bottommargin_30">
+            Jau daugiau kaip 14 metų gilinamės į pagrindines atliekų susidarymo, tvarkymo bei kitas aplinkosaugos problemas Lietuvoje ir visame pasaulyje. Esame subūrę profesionalų komandą, kas leidžia spręsti atliekų tvarkymo bei aplinkosaugos klausimus greitai, kokybiškai bei remiantis griežčiausiais reikalavimais.</p>
+            <a class="theme_button" href="/apie-mus">
+              Daugiau Apie Mus
+            </a>
+          </div>
+        </div>
+        <div class="row topmargin_40 columns_margin_top_60">
+          <div class="col-md-4">
+            <div class="teaser with_border rounded text-center">
+              <div class="teaser_icon main_bg_color2 round size_small offset_icon">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <h4 class="poppins hover-color2">
+                <a href="#">Atsakingas atliekų tvarkymas</a>
+              </h4>
+              <p>
+              Garantuojame, kad visos atliekos tvarkomos remiantis griežčiausiais LR ir ES teisiniais reikalavimais. Patikėkite mums savo atliekas!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="teaser with_border rounded text-center">
+              <div class="teaser_icon main_bg_color3 round size_small offset_icon">
+                <svg width="48" height="48" viewBox="0 0 511.992 511.992"><path d="M511.005 279.646c-4.597-46.238-25.254-89.829-58.168-122.744-28.128-28.127-62.556-46.202-98.782-54.239V77.255c14.796-3.681 25.794-17.074 25.794-32.993 0-18.748-15.252-34-34-34h-72c-18.748 0-34 15.252-34 34 0 15.918 10.998 29.311 25.793 32.993v25.479c-36.115 8.071-70.429 26.121-98.477 54.169a202.966 202.966 0 0 0-16.979 19.269 9.99 9.99 0 0 0-.758-.038H78.167c-5.522 0-10 4.477-10 10s4.478 10 10 10h58.412a200.467 200.467 0 0 0-17.744 38.436H10c-5.522 0-10 4.477-10 10s4.478 10 10 10h103.184a203.324 203.324 0 0 0-4.963 38.437H64c-5.522 0-10 4.477-10 10s4.478 10 10 10h44.54a203.025 203.025 0 0 0 6.244 38.437H50c-5.522 0-10 4.477-10 10s4.478 10 10 10h71.166c9.81 25.951 25.141 50.274 45.999 71.132 32.946 32.946 76.582 53.608 122.868 58.181 6.606.652 13.217.975 19.819.975 39.022 0 77.548-11.293 110.238-32.581 4.628-3.014 5.937-9.209 2.923-13.837s-9.209-5.937-13.837-2.923c-71.557 46.597-167.39 36.522-227.869-23.957-70.962-70.962-70.962-186.425 0-257.388 70.961-70.961 186.424-70.961 257.387 0 60.399 60.4 70.529 156.151 24.086 227.673-3.008 4.632-1.691 10.826 2.94 13.833 4.634 3.008 10.826 1.691 13.833-2.941 24.814-38.215 35.984-84.37 31.452-129.965zM259.849 44.263c0-7.72 6.28-14 14-14h72c7.72 0 14 6.28 14 14s-6.28 14-14 14h-72c-7.72 0-14-6.281-14-14zm25.793 55.033V78.263h48.413V99.26a203.755 203.755 0 0 0-48.413.036z"></path><path d="M445.77 425.5c-2.64 0-5.21 1.07-7.069 2.93a10.034 10.034 0 0 0-2.931 7.07c0 2.63 1.061 5.21 2.931 7.07a10.013 10.013 0 0 0 7.069 2.93c2.63 0 5.2-1.06 7.07-2.93 1.86-1.86 2.93-4.44 2.93-7.07s-1.069-5.21-2.93-7.07a10.095 10.095 0 0 0-7.07-2.93zM310.001 144.609c-85.538 0-155.129 69.59-155.129 155.129s69.591 155.129 155.129 155.129 155.129-69.59 155.129-155.129-69.591-155.129-155.129-155.129zm0 290.258c-74.511 0-135.129-60.619-135.129-135.129s60.618-135.129 135.129-135.129S445.13 225.228 445.13 299.738s-60.618 135.129-135.129 135.129z"></path><path d="M373.257 222.34l-49.53 49.529a30.885 30.885 0 0 0-13.726-3.205 30.882 30.882 0 0 0-13.726 3.205l-22.167-22.167c-3.906-3.905-10.236-3.905-14.143 0-3.905 3.905-3.905 10.237 0 14.142l22.167 22.167a30.871 30.871 0 0 0-3.205 13.726c0 17.134 13.939 31.074 31.074 31.074s31.074-13.94 31.074-31.074c0-4.925-1.157-9.584-3.205-13.726l48.076-48.076 1.453-1.453c3.905-3.905 3.905-10.237 0-14.142s-10.235-3.905-14.142 0zm-63.256 88.472c-6.106 0-11.074-4.968-11.074-11.074s4.968-11.074 11.074-11.074 11.074 4.968 11.074 11.074-4.968 11.074-11.074 11.074zM416.92 289.86h-9.265c-5.522 0-10 4.477-10 10s4.478 10 10 10h9.265c5.522 0 10-4.477 10-10s-4.478-10-10-10zM212.346 289.616h-9.264c-5.522 0-10 4.477-10 10s4.478 10 10 10h9.264c5.522 0 10-4.477 10-10s-4.478-10-10-10zM310.123 212.083c5.522 0 10-4.477 10-10v-9.264c0-5.523-4.478-10-10-10s-10 4.477-10 10v9.264c0 5.523 4.478 10 10 10zM309.879 387.393c-5.522 0-10 4.477-10 10v9.264c0 5.523 4.478 10 10 10s10-4.477 10-10v-9.264c0-5.523-4.478-10-10-10zM10 351.44c-2.63 0-5.21 1.07-7.07 2.93A10.076 10.076 0 0 0 0 361.44c0 2.64 1.069 5.21 2.93 7.07s4.44 2.93 7.07 2.93 5.21-1.07 7.069-2.93c1.86-1.86 2.931-4.44 2.931-7.07s-1.07-5.21-2.931-7.07A10.072 10.072 0 0 0 10 351.44z"></path></svg>
+              </div>
+              <h4 class="poppins hover-color3">
+                <a href="#">Greitas atliekų paėmimas</a>
+              </h4>
+              <p>
+                Išvystyta logistikos sistema leidžia atliekas surinkti visoje Lietuvoje per 1-3 darbo dienas nuo užsakymo gavimo.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="teaser with_border rounded text-center">
+              <div class="teaser_icon main_bg_color round size_small offset_icon">
+                <svg width="48" height="48" viewBox="0 0 512.002 512.002"><path d="M109.834 496.21l-15.055-21.206c-3.196-4.504-9.439-5.563-13.943-2.366-4.503 3.197-5.563 9.439-2.365 13.943l15.055 21.207a9.986 9.986 0 0 0 8.163 4.212c2.002 0 4.023-.6 5.78-1.847 4.503-3.197 5.563-9.439 2.365-13.943zM225.206 499.946l-16.384-78.088c-7.967-37.972-30.087-70.806-62.283-92.455l-34.981-23.522c-14.027-9.43-32.881-7.402-44.605 4.553V189.938c0-15.816-10.783-29.254-26.223-32.681-9.965-2.214-20.243.184-28.204 6.571-7.96 6.387-12.525 15.904-12.525 26.11V344.99c0 20.313 6.216 39.806 17.975 56.371l17.833 25.121a9.986 9.986 0 0 0 8.163 4.212c2.002 0 4.023-.6 5.78-1.847 4.503-3.197 5.563-9.439 2.365-13.943l-17.833-25.121c-9.344-13.163-14.283-28.652-14.283-44.794V189.938c0-4.108 1.838-7.939 5.042-10.511a13.408 13.408 0 0 1 11.354-2.645c6.215 1.379 10.556 6.789 10.556 13.156v123.016c0 17.414 6.398 34.005 18.021 46.913.498.597 1.01 1.188 1.551 1.761 6.641 7.037 14.449 15.329 21.803 23.145l10.295 10.957c.033.035.069.065.103.099 8.807 9.367 15.302 16.284 15.438 16.428 3.779 4.025 10.109 4.225 14.135.444s4.225-10.109.443-14.135c-.182-.194-11.888-12.659-25.256-26.868l-22.929-24.403c-.058-.062-.111-.127-.169-.189-5.376-6.43-5.309-15.753.326-22.115 4.985-5.626 13.449-6.706 19.686-2.513L135.379 346c27.848 18.725 46.979 47.123 53.869 79.965l16.385 78.089c.989 4.713 5.146 7.948 9.777 7.948.68 0 1.371-.07 2.063-.215 5.405-1.134 8.867-6.436 7.733-11.841z"></path><path d="M74.089 445.858l-.064-.09c-3.21-4.496-9.454-5.54-13.949-2.332s-5.539 9.453-2.332 13.948l.064.09a9.989 9.989 0 0 0 8.149 4.193c2.01 0 4.039-.604 5.8-1.861 4.494-3.208 5.539-9.453 2.332-13.948zM499.475 163.829c-7.96-6.387-18.243-8.781-28.203-6.571-15.44 3.426-26.224 16.865-26.224 32.681v120.496c-11.723-11.955-30.579-13.983-44.605-4.553l-34.981 23.521c-32.197 21.648-54.316 54.483-62.283 92.455l-16.384 78.089c-1.134 5.405 2.328 10.706 7.733 11.84.692.145 1.384.215 2.063.215 4.632 0 8.788-3.236 9.777-7.949l16.384-78.089c6.891-32.841 26.021-61.24 53.869-79.964l34.981-23.521c6.235-4.194 14.699-3.114 19.686 2.512 5.628 6.354 5.703 15.662.347 22.092-.064.07-.125.142-.189.212l-48.186 51.271c-3.781 4.026-3.582 10.354.443 14.135 4.026 3.781 10.354 3.582 14.135-.444.136-.144 40.998-43.591 47.639-50.628a38.145 38.145 0 0 0 1.551-1.761c11.622-12.908 18.021-29.499 18.021-46.913V189.938c0-6.367 4.341-11.777 10.557-13.156 4.013-.89 8.149.075 11.354 2.645a13.413 13.413 0 0 1 5.042 10.511V344.99c0 16.142-4.939 31.631-14.283 44.794l-75.551 106.427c-3.197 4.503-2.138 10.746 2.365 13.943a9.958 9.958 0 0 0 5.78 1.847 9.99 9.99 0 0 0 8.163-4.212l75.551-106.427c11.759-16.565 17.975-36.058 17.975-56.371V189.938c-.003-10.206-4.567-19.722-12.527-26.109z"></path><path d="M382.658 191.66l-17.791-4.25v-3.19c11.563-8.1 19.145-21.513 19.145-36.671V124.42c0-24.679-20.077-44.756-44.756-44.756-11.075 0-21.215 4.052-29.038 10.74C301.508 69.074 280.55 54 256.126 54c-24.454 0-45.434 15.113-54.124 36.484-7.835-6.736-18.012-10.822-29.132-10.822-24.679 0-44.756 20.077-44.756 44.756V147.547c0 15.158 7.582 28.571 19.145 36.671v3.19l-17.791 4.25c-21.242 5.075-36.078 23.872-36.078 45.712v18.676c0 5.523 4.478 10 10 10h45.952a62.577 62.577 0 0 0-.12 3.661v35.958c0 5.523 4.478 10 10 10h60.11c5.522 0 10-4.477 10-10s-4.478-10-10-10H209V275c0-5.523-4.478-10-10-10s-10 4.477-10 10v20.667h-19.777v-25.958c0-19.287 13.1-35.896 31.854-40.39l27.442-6.576 18.365 41.782a10 10 0 0 0 9.153 5.976h.001a10 10 0 0 0 9.154-5.975l18.346-41.72 27.355 6.535c18.772 4.485 31.883 21.096 31.883 40.397v25.929h-19.777V275c0-5.523-4.478-10-10-10s-10 4.477-10 10v20.667h-11.333c-5.522 0-10 4.477-10 10s4.478 10 10 10h61.111c5.522 0 10-4.477 10-10v-35.929c0-1.239-.05-2.467-.122-3.69h46.082c5.522 0 10-4.477 10-10v-18.676c0-21.84-14.836-40.638-36.079-45.712zm-43.402-91.998c13.102 0 23.858 10.231 24.702 23.123h-13.903a72.889 72.889 0 0 1-33.529-8.172c3.803-8.788 12.561-14.951 22.73-14.951zM314.5 146.087c.012-.487.037-.972.037-1.462v-8.906a92.891 92.891 0 0 0 35.518 7.066h13.957v4.763c0 13.65-11.105 24.756-24.756 24.756S314.5 161.198 314.5 147.547v-1.46zm-96.784-33.677c0-21.179 17.23-38.41 38.41-38.41 19.103 0 34.992 14.018 37.926 32.306l-16.835-9.891a9.998 9.998 0 0 0-12.73 2.2 43.084 43.084 0 0 1-33.102 15.449h-13.669v-1.654zm-44.845-12.748c10.169 0 18.926 6.164 22.73 14.95a72.892 72.892 0 0 1-33.529 8.172h-13.903c.844-12.891 11.601-23.122 24.702-23.122zm-24.756 43.122h13.957a92.895 92.895 0 0 0 35.555-7.081v11.843c0 13.65-11.105 24.756-24.756 24.756s-24.756-11.104-24.756-24.755v-4.763zm48.302 67.085c-19.674 4.714-35.136 18.431-42.495 36.178H113.39v-8.676a26.911 26.911 0 0 1 20.725-26.26l25.468-6.084a10 10 0 0 0 7.677-9.726v-3.362c1.84.231 3.71.364 5.611.364 1.887 0 3.744-.131 5.57-.359v2.853a9.992 9.992 0 0 0 4.562 8.858 9.951 9.951 0 0 0 3.553 1.428l14.917 3.574-5.056 1.212zm27.894-15.524a46.92 46.92 0 0 0-8.007-2.7l-17.864-4.281v-3.116a45.122 45.122 0 0 0 8.667-7.918 58.871 58.871 0 0 0 17.204 17.244v.771zm43.432 14.693l-11.702 26.615-11.729-26.683v-7.136a58.455 58.455 0 0 0 11.814 1.202 58.45 58.45 0 0 0 11.617-1.164v7.166zm-11.617-26.003c-21.18.001-38.41-17.23-38.41-38.41v-10.562h13.669c15.858 0 30.936-5.897 42.492-16.415l20.622 12.116v16.324c-.772 20.503-17.683 36.947-38.373 36.947zm31.617 11.342v-.677a58.851 58.851 0 0 0 17.347-17.286 45.113 45.113 0 0 0 8.594 7.834v3.116l-17.865 4.281a47.089 47.089 0 0 0-8.076 2.732zm110.993 51.67h-40.67c-7.366-17.747-22.839-31.456-42.525-36.159l-5.021-1.199 14.997-3.594a9.987 9.987 0 0 0 3.605-1.44 9.991 9.991 0 0 0 4.562-8.643v-3.068c1.827.228 3.683.359 5.57.359a44.99 44.99 0 0 0 5.611-.364v3.362a10 10 0 0 0 7.677 9.726l25.468 6.084a26.913 26.913 0 0 1 20.726 26.26v8.676z"></path><path d="M263.069 298.59a10.08 10.08 0 0 0-7.069-2.92c-2.641 0-5.21 1.06-7.07 2.92a10.056 10.056 0 0 0-2.93 7.08c0 2.63 1.06 5.2 2.93 7.07 1.86 1.86 4.43 2.93 7.07 2.93 2.63 0 5.2-1.07 7.069-2.93a10.094 10.094 0 0 0 2.931-7.07c0-2.64-1.07-5.21-2.931-7.08zM255.993 0c-5.522 0-10 4.477-10 10v14.963c0 5.523 4.478 10 10 10s10-4.477 10-10V10c0-5.523-4.477-10-10-10zM219.157 32.619l-10.49-10.48c-3.907-3.904-10.238-3.901-14.142.006-3.904 3.907-3.9 10.239.007 14.142l10.491 10.48a9.966 9.966 0 0 0 7.067 2.926 9.97 9.97 0 0 0 7.074-2.932c3.902-3.907 3.9-10.239-.007-14.142zM317.222 22.395c-3.907-3.903-10.24-3.901-14.142.007l-10.409 10.419c-3.903 3.907-3.9 10.239.007 14.142a9.968 9.968 0 0 0 7.068 2.926 9.966 9.966 0 0 0 7.074-2.933l10.409-10.419c3.903-3.907 3.9-10.239-.007-14.142z"></path></svg>
+              </div>
+              <h4 class="poppins">
+                <a href="#">Paslaugas teikiame visiems!</a>
+              </h4>
+              <p>
+                Dirbame su įmonėmis, ligoninėmis, mokyklomis, kitomis viešosiomis įstaigomis, nevyriausybinėmis organizacijomis, bei privačiais, individualias veiklas vykdančiais gyventojais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="scroll_button_wrap">
-					<a href="#about" class="scroll_button">
-						<span class="sr-only">scroll down</span>
-					</a>
-				</div>
-			</section>
+    <section id="pickup" class="ds page_contact parallax section_padding_100">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="section_header with_icon">
+              Užsakyti atliekų išvežimą
+            </h2>
+            <form method="post" action="https://mailthis.to/uabalvinta" class="contact-form row columns_margin_bottom_20">
+              <input type="hidden" name="_honeypot" value="">
+              <input type="hidden" name="_subject" value="Atliekų išvežimo užsakymas">
+              <input type="hidden" name="_after" value="https://alvinta.lt/">
+              <input type="hidden" name="_confirmation" value="Jūsų informacija gauta. Susisieksime su Jumis artimiausiu metu.">
 
-			<section id="about" class="ls section_padding_top_100 section_padding_bottom_150">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
-							<h2 class="section_header with_icon">
-							<!--Alvinta -->
-							</h2>
-							<p class="small-text grey">Trumpai apie mus</p>
-							<p class="bottommargin_30">
- 							Jau daugiau kaip 14 metų gilinamės į pagrindines atliekų susidarymo, tvarkymo bei kitas aplinkosaugos problemas Lietuvoje ir visame pasaulyje. Esame subūrę profesionalų komandą, kas leidžia spręsti atliekų tvarkymo bei aplinkosaugos klausimus greitai, kokybiškai bei remiantis griežčiausiais reikalavimais.</p>
-							<a class="theme_button" href="/apie-mus">
-								Daugiau Apie Mus
-							</a>
-						</div>
-					</div>
-					<div class="row topmargin_40 columns_margin_top_60">
-						<div class="col-md-4">
-							<div class="teaser with_border rounded text-center">
-								<div class="teaser_icon main_bg_color2 round size_small offset_icon">
-									<i class="fa fa-leaf"></i>
-								</div>
-								<h4 class="poppins hover-color2">
-									<a href="#">Atsakingas atliekų tvarkymas</a>
-								</h4>
-								<p>
-								Garantuojame, kad visos atliekos tvarkomos remiantis griežčiausiais LR ir ES teisiniais reikalavimais. Patikėkite mums savo atliekas!
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="teaser with_border rounded text-center">
-								<div class="teaser_icon main_bg_color3 round size_small offset_icon">
-                  <svg width="48" height="48" viewBox="0 0 511.992 511.992"><path d="M511.005 279.646c-4.597-46.238-25.254-89.829-58.168-122.744-28.128-28.127-62.556-46.202-98.782-54.239V77.255c14.796-3.681 25.794-17.074 25.794-32.993 0-18.748-15.252-34-34-34h-72c-18.748 0-34 15.252-34 34 0 15.918 10.998 29.311 25.793 32.993v25.479c-36.115 8.071-70.429 26.121-98.477 54.169a202.966 202.966 0 0 0-16.979 19.269 9.99 9.99 0 0 0-.758-.038H78.167c-5.522 0-10 4.477-10 10s4.478 10 10 10h58.412a200.467 200.467 0 0 0-17.744 38.436H10c-5.522 0-10 4.477-10 10s4.478 10 10 10h103.184a203.324 203.324 0 0 0-4.963 38.437H64c-5.522 0-10 4.477-10 10s4.478 10 10 10h44.54a203.025 203.025 0 0 0 6.244 38.437H50c-5.522 0-10 4.477-10 10s4.478 10 10 10h71.166c9.81 25.951 25.141 50.274 45.999 71.132 32.946 32.946 76.582 53.608 122.868 58.181 6.606.652 13.217.975 19.819.975 39.022 0 77.548-11.293 110.238-32.581 4.628-3.014 5.937-9.209 2.923-13.837s-9.209-5.937-13.837-2.923c-71.557 46.597-167.39 36.522-227.869-23.957-70.962-70.962-70.962-186.425 0-257.388 70.961-70.961 186.424-70.961 257.387 0 60.399 60.4 70.529 156.151 24.086 227.673-3.008 4.632-1.691 10.826 2.94 13.833 4.634 3.008 10.826 1.691 13.833-2.941 24.814-38.215 35.984-84.37 31.452-129.965zM259.849 44.263c0-7.72 6.28-14 14-14h72c7.72 0 14 6.28 14 14s-6.28 14-14 14h-72c-7.72 0-14-6.281-14-14zm25.793 55.033V78.263h48.413V99.26a203.755 203.755 0 0 0-48.413.036z"></path><path d="M445.77 425.5c-2.64 0-5.21 1.07-7.069 2.93a10.034 10.034 0 0 0-2.931 7.07c0 2.63 1.061 5.21 2.931 7.07a10.013 10.013 0 0 0 7.069 2.93c2.63 0 5.2-1.06 7.07-2.93 1.86-1.86 2.93-4.44 2.93-7.07s-1.069-5.21-2.93-7.07a10.095 10.095 0 0 0-7.07-2.93zM310.001 144.609c-85.538 0-155.129 69.59-155.129 155.129s69.591 155.129 155.129 155.129 155.129-69.59 155.129-155.129-69.591-155.129-155.129-155.129zm0 290.258c-74.511 0-135.129-60.619-135.129-135.129s60.618-135.129 135.129-135.129S445.13 225.228 445.13 299.738s-60.618 135.129-135.129 135.129z"></path><path d="M373.257 222.34l-49.53 49.529a30.885 30.885 0 0 0-13.726-3.205 30.882 30.882 0 0 0-13.726 3.205l-22.167-22.167c-3.906-3.905-10.236-3.905-14.143 0-3.905 3.905-3.905 10.237 0 14.142l22.167 22.167a30.871 30.871 0 0 0-3.205 13.726c0 17.134 13.939 31.074 31.074 31.074s31.074-13.94 31.074-31.074c0-4.925-1.157-9.584-3.205-13.726l48.076-48.076 1.453-1.453c3.905-3.905 3.905-10.237 0-14.142s-10.235-3.905-14.142 0zm-63.256 88.472c-6.106 0-11.074-4.968-11.074-11.074s4.968-11.074 11.074-11.074 11.074 4.968 11.074 11.074-4.968 11.074-11.074 11.074zM416.92 289.86h-9.265c-5.522 0-10 4.477-10 10s4.478 10 10 10h9.265c5.522 0 10-4.477 10-10s-4.478-10-10-10zM212.346 289.616h-9.264c-5.522 0-10 4.477-10 10s4.478 10 10 10h9.264c5.522 0 10-4.477 10-10s-4.478-10-10-10zM310.123 212.083c5.522 0 10-4.477 10-10v-9.264c0-5.523-4.478-10-10-10s-10 4.477-10 10v9.264c0 5.523 4.478 10 10 10zM309.879 387.393c-5.522 0-10 4.477-10 10v9.264c0 5.523 4.478 10 10 10s10-4.477 10-10v-9.264c0-5.523-4.478-10-10-10zM10 351.44c-2.63 0-5.21 1.07-7.07 2.93A10.076 10.076 0 0 0 0 361.44c0 2.64 1.069 5.21 2.93 7.07s4.44 2.93 7.07 2.93 5.21-1.07 7.069-2.93c1.86-1.86 2.931-4.44 2.931-7.07s-1.07-5.21-2.931-7.07A10.072 10.072 0 0 0 10 351.44z"></path></svg>
-								</div>
-								<h4 class="poppins hover-color3">
-									<a href="#">Greitas atliekų paėmimas</a>
-								</h4>
-								<p>
-									Išvystyta logistikos sistema leidžia atliekas surinkti visoje Lietuvoje per 1-3 darbo dienas nuo užsakymo gavimo.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="teaser with_border rounded text-center">
-								<div class="teaser_icon main_bg_color round size_small offset_icon">
-                  <svg width="48" height="48" viewBox="0 0 512.002 512.002"><path d="M109.834 496.21l-15.055-21.206c-3.196-4.504-9.439-5.563-13.943-2.366-4.503 3.197-5.563 9.439-2.365 13.943l15.055 21.207a9.986 9.986 0 0 0 8.163 4.212c2.002 0 4.023-.6 5.78-1.847 4.503-3.197 5.563-9.439 2.365-13.943zM225.206 499.946l-16.384-78.088c-7.967-37.972-30.087-70.806-62.283-92.455l-34.981-23.522c-14.027-9.43-32.881-7.402-44.605 4.553V189.938c0-15.816-10.783-29.254-26.223-32.681-9.965-2.214-20.243.184-28.204 6.571-7.96 6.387-12.525 15.904-12.525 26.11V344.99c0 20.313 6.216 39.806 17.975 56.371l17.833 25.121a9.986 9.986 0 0 0 8.163 4.212c2.002 0 4.023-.6 5.78-1.847 4.503-3.197 5.563-9.439 2.365-13.943l-17.833-25.121c-9.344-13.163-14.283-28.652-14.283-44.794V189.938c0-4.108 1.838-7.939 5.042-10.511a13.408 13.408 0 0 1 11.354-2.645c6.215 1.379 10.556 6.789 10.556 13.156v123.016c0 17.414 6.398 34.005 18.021 46.913.498.597 1.01 1.188 1.551 1.761 6.641 7.037 14.449 15.329 21.803 23.145l10.295 10.957c.033.035.069.065.103.099 8.807 9.367 15.302 16.284 15.438 16.428 3.779 4.025 10.109 4.225 14.135.444s4.225-10.109.443-14.135c-.182-.194-11.888-12.659-25.256-26.868l-22.929-24.403c-.058-.062-.111-.127-.169-.189-5.376-6.43-5.309-15.753.326-22.115 4.985-5.626 13.449-6.706 19.686-2.513L135.379 346c27.848 18.725 46.979 47.123 53.869 79.965l16.385 78.089c.989 4.713 5.146 7.948 9.777 7.948.68 0 1.371-.07 2.063-.215 5.405-1.134 8.867-6.436 7.733-11.841z"></path><path d="M74.089 445.858l-.064-.09c-3.21-4.496-9.454-5.54-13.949-2.332s-5.539 9.453-2.332 13.948l.064.09a9.989 9.989 0 0 0 8.149 4.193c2.01 0 4.039-.604 5.8-1.861 4.494-3.208 5.539-9.453 2.332-13.948zM499.475 163.829c-7.96-6.387-18.243-8.781-28.203-6.571-15.44 3.426-26.224 16.865-26.224 32.681v120.496c-11.723-11.955-30.579-13.983-44.605-4.553l-34.981 23.521c-32.197 21.648-54.316 54.483-62.283 92.455l-16.384 78.089c-1.134 5.405 2.328 10.706 7.733 11.84.692.145 1.384.215 2.063.215 4.632 0 8.788-3.236 9.777-7.949l16.384-78.089c6.891-32.841 26.021-61.24 53.869-79.964l34.981-23.521c6.235-4.194 14.699-3.114 19.686 2.512 5.628 6.354 5.703 15.662.347 22.092-.064.07-.125.142-.189.212l-48.186 51.271c-3.781 4.026-3.582 10.354.443 14.135 4.026 3.781 10.354 3.582 14.135-.444.136-.144 40.998-43.591 47.639-50.628a38.145 38.145 0 0 0 1.551-1.761c11.622-12.908 18.021-29.499 18.021-46.913V189.938c0-6.367 4.341-11.777 10.557-13.156 4.013-.89 8.149.075 11.354 2.645a13.413 13.413 0 0 1 5.042 10.511V344.99c0 16.142-4.939 31.631-14.283 44.794l-75.551 106.427c-3.197 4.503-2.138 10.746 2.365 13.943a9.958 9.958 0 0 0 5.78 1.847 9.99 9.99 0 0 0 8.163-4.212l75.551-106.427c11.759-16.565 17.975-36.058 17.975-56.371V189.938c-.003-10.206-4.567-19.722-12.527-26.109z"></path><path d="M382.658 191.66l-17.791-4.25v-3.19c11.563-8.1 19.145-21.513 19.145-36.671V124.42c0-24.679-20.077-44.756-44.756-44.756-11.075 0-21.215 4.052-29.038 10.74C301.508 69.074 280.55 54 256.126 54c-24.454 0-45.434 15.113-54.124 36.484-7.835-6.736-18.012-10.822-29.132-10.822-24.679 0-44.756 20.077-44.756 44.756V147.547c0 15.158 7.582 28.571 19.145 36.671v3.19l-17.791 4.25c-21.242 5.075-36.078 23.872-36.078 45.712v18.676c0 5.523 4.478 10 10 10h45.952a62.577 62.577 0 0 0-.12 3.661v35.958c0 5.523 4.478 10 10 10h60.11c5.522 0 10-4.477 10-10s-4.478-10-10-10H209V275c0-5.523-4.478-10-10-10s-10 4.477-10 10v20.667h-19.777v-25.958c0-19.287 13.1-35.896 31.854-40.39l27.442-6.576 18.365 41.782a10 10 0 0 0 9.153 5.976h.001a10 10 0 0 0 9.154-5.975l18.346-41.72 27.355 6.535c18.772 4.485 31.883 21.096 31.883 40.397v25.929h-19.777V275c0-5.523-4.478-10-10-10s-10 4.477-10 10v20.667h-11.333c-5.522 0-10 4.477-10 10s4.478 10 10 10h61.111c5.522 0 10-4.477 10-10v-35.929c0-1.239-.05-2.467-.122-3.69h46.082c5.522 0 10-4.477 10-10v-18.676c0-21.84-14.836-40.638-36.079-45.712zm-43.402-91.998c13.102 0 23.858 10.231 24.702 23.123h-13.903a72.889 72.889 0 0 1-33.529-8.172c3.803-8.788 12.561-14.951 22.73-14.951zM314.5 146.087c.012-.487.037-.972.037-1.462v-8.906a92.891 92.891 0 0 0 35.518 7.066h13.957v4.763c0 13.65-11.105 24.756-24.756 24.756S314.5 161.198 314.5 147.547v-1.46zm-96.784-33.677c0-21.179 17.23-38.41 38.41-38.41 19.103 0 34.992 14.018 37.926 32.306l-16.835-9.891a9.998 9.998 0 0 0-12.73 2.2 43.084 43.084 0 0 1-33.102 15.449h-13.669v-1.654zm-44.845-12.748c10.169 0 18.926 6.164 22.73 14.95a72.892 72.892 0 0 1-33.529 8.172h-13.903c.844-12.891 11.601-23.122 24.702-23.122zm-24.756 43.122h13.957a92.895 92.895 0 0 0 35.555-7.081v11.843c0 13.65-11.105 24.756-24.756 24.756s-24.756-11.104-24.756-24.755v-4.763zm48.302 67.085c-19.674 4.714-35.136 18.431-42.495 36.178H113.39v-8.676a26.911 26.911 0 0 1 20.725-26.26l25.468-6.084a10 10 0 0 0 7.677-9.726v-3.362c1.84.231 3.71.364 5.611.364 1.887 0 3.744-.131 5.57-.359v2.853a9.992 9.992 0 0 0 4.562 8.858 9.951 9.951 0 0 0 3.553 1.428l14.917 3.574-5.056 1.212zm27.894-15.524a46.92 46.92 0 0 0-8.007-2.7l-17.864-4.281v-3.116a45.122 45.122 0 0 0 8.667-7.918 58.871 58.871 0 0 0 17.204 17.244v.771zm43.432 14.693l-11.702 26.615-11.729-26.683v-7.136a58.455 58.455 0 0 0 11.814 1.202 58.45 58.45 0 0 0 11.617-1.164v7.166zm-11.617-26.003c-21.18.001-38.41-17.23-38.41-38.41v-10.562h13.669c15.858 0 30.936-5.897 42.492-16.415l20.622 12.116v16.324c-.772 20.503-17.683 36.947-38.373 36.947zm31.617 11.342v-.677a58.851 58.851 0 0 0 17.347-17.286 45.113 45.113 0 0 0 8.594 7.834v3.116l-17.865 4.281a47.089 47.089 0 0 0-8.076 2.732zm110.993 51.67h-40.67c-7.366-17.747-22.839-31.456-42.525-36.159l-5.021-1.199 14.997-3.594a9.987 9.987 0 0 0 3.605-1.44 9.991 9.991 0 0 0 4.562-8.643v-3.068c1.827.228 3.683.359 5.57.359a44.99 44.99 0 0 0 5.611-.364v3.362a10 10 0 0 0 7.677 9.726l25.468 6.084a26.913 26.913 0 0 1 20.726 26.26v8.676z"></path><path d="M263.069 298.59a10.08 10.08 0 0 0-7.069-2.92c-2.641 0-5.21 1.06-7.07 2.92a10.056 10.056 0 0 0-2.93 7.08c0 2.63 1.06 5.2 2.93 7.07 1.86 1.86 4.43 2.93 7.07 2.93 2.63 0 5.2-1.07 7.069-2.93a10.094 10.094 0 0 0 2.931-7.07c0-2.64-1.07-5.21-2.931-7.08zM255.993 0c-5.522 0-10 4.477-10 10v14.963c0 5.523 4.478 10 10 10s10-4.477 10-10V10c0-5.523-4.477-10-10-10zM219.157 32.619l-10.49-10.48c-3.907-3.904-10.238-3.901-14.142.006-3.904 3.907-3.9 10.239.007 14.142l10.491 10.48a9.966 9.966 0 0 0 7.067 2.926 9.97 9.97 0 0 0 7.074-2.932c3.902-3.907 3.9-10.239-.007-14.142zM317.222 22.395c-3.907-3.903-10.24-3.901-14.142.007l-10.409 10.419c-3.903 3.907-3.9 10.239.007 14.142a9.968 9.968 0 0 0 7.068 2.926 9.966 9.966 0 0 0 7.074-2.933l10.409-10.419c3.903-3.907 3.9-10.239-.007-14.142z"></path></svg>
-								</div>
-								<h4 class="poppins">
-									<a href="#">Paslaugas teikiame visiems!</a>
-								</h4>
-								<p>
-									Dirbame su įmonėmis, ligoninėmis, mokyklomis, kitomis viešosiomis įstaigomis, nevyriausybinėmis organizacijomis, bei privačiais, individualias veiklas vykdančiais gyventojais.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="pickup-name">
+                                          Jūsų vardas, pavardė
+                    <span class="required">*</span>
+                  </label>
+                  <i class="fa fa-user highlight2" aria-hidden="true"></i>
+                  <input type="text" aria-required="true" size="30" value="" name="name" id="pickup-name" class="form-control" placeholder="Jūsų vardas, pavardė">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="pickup-phone">
+                                          Telefono numeris
+                    <span class="required">*</span>
+                  </label>
+                  <i class="fa fa-phone highlight2" aria-hidden="true"></i>
+                  <input type="text" aria-required="true" size="30" value="" name="phone" id="pickup-phone" class="form-control" placeholder="Telefono numeris">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="pickup-email">
+                    El. Pašto adresas
+                    <span class="required">*</span>
+                  </label>
+                  <i class="fa fa-envelope highlight2" aria-hidden="true"></i>
+                  <input type="email" aria-required="true" size="30" value="" name="_replyto" id="pickup-email" class="form-control" placeholder="El. Pašto adresas">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group select-group">
+                  <label for="pickup-date">
+                                          Pageidaujama atliekų paėmimo data
+                    <span class="required">*</span>
+                  </label>
+                  <i class="fa fa-calendar highlight2" aria-hidden="true"></i>
+                  <input type="text" data-input-type="date" aria-required="true" size="30" value="" name="date" id="pickup-date" class="form-control" placeholder="Data">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group select-group">
+                  <label for="pickup-time">
+                    <span class="required">*</span>
+                  </label>
+                  <i class="fa fa-clock-o highlight2" aria-hidden="true"></i>
+                  <input type="text" data-input-type="time" aria-required="true" size="30" value="" name="date" id="pickup-time" class="form-control" placeholder="Laikas">
+                </div>
+              </div>
+              <div class="col-sm-12">
 
-			<section id="pickup" class="ds page_contact parallax section_padding_100">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h2 class="section_header with_icon">
-								Užsakyti atliekų išvežimą
-							</h2>
-							<form method="post" action="https://mailthis.to/uabalvinta" class="contact-form row columns_margin_bottom_20">
-								<input type="hidden" name="_honeypot" value="">
-								<input type="hidden" name="_subject" value="Atliekų išvežimo užsakymas">
-								<input type="hidden" name="_after" value="https://alvinta.lt/">
-								<input type="hidden" name="_confirmation" value="Jūsų informacija gauta. Susisieksime su Jumis artimiausiu metu.">
+                <div class="form-group">
+                  <label for="pickup-message">message</label>
+                  <i class="fa fa-comment-o highlight2" aria-hidden="true"></i>
+                  <textarea aria-required="true" rows="3" cols="45" name="message" id="pickup-message" class="form-control" placeholder="Pageidaujamų išvežti atliekų sąrašas, preliminarus kiekis, atliekų buvimo vieta ir kt. Jūsų nuomone svarbi informacija"></textarea>
+                </div>
+              </div>
 
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="pickup-name">
-                                            Jūsų vardas, pavardė
-											<span class="required">*</span>
-										</label>
-										<i class="fa fa-user highlight2" aria-hidden="true"></i>
-										<input type="text" aria-required="true" size="30" value="" name="name" id="pickup-name" class="form-control" placeholder="Jūsų vardas, pavardė">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="pickup-phone">
-                                            Telefono numeris
-											<span class="required">*</span>
-										</label>
-										<i class="fa fa-phone highlight2" aria-hidden="true"></i>
-										<input type="text" aria-required="true" size="30" value="" name="phone" id="pickup-phone" class="form-control" placeholder="Telefono numeris">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="pickup-email">
-											El. Pašto adresas
-											<span class="required">*</span>
-										</label>
-										<i class="fa fa-envelope highlight2" aria-hidden="true"></i>
-										<input type="email" aria-required="true" size="30" value="" name="_replyto" id="pickup-email" class="form-control" placeholder="El. Pašto adresas">
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="form-group select-group">
-										<label for="pickup-date">
-                                            Pageidaujama atliekų paėmimo data
-											<span class="required">*</span>
-										</label>
-										<i class="fa fa-calendar highlight2" aria-hidden="true"></i>
-										<input type="text" data-input-type="date" aria-required="true" size="30" value="" name="date" id="pickup-date" class="form-control" placeholder="Data">
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="form-group select-group">
-										<label for="pickup-time">
-											<span class="required">*</span>
-										</label>
-										<i class="fa fa-clock-o highlight2" aria-hidden="true"></i>
-										<input type="text" data-input-type="time" aria-required="true" size="30" value="" name="date" id="pickup-time" class="form-control" placeholder="Laikas">
-									</div>
-								</div>
-								<div class="col-sm-12">
+              <div class="col-sm-12">
 
-									<div class="form-group">
-										<label for="pickup-message">message</label>
-										<i class="fa fa-comment-o highlight2" aria-hidden="true"></i>
-										<textarea aria-required="true" rows="3" cols="45" name="message" id="pickup-message" class="form-control" placeholder="Pageidaujamų išvežti atliekų sąrašas, preliminarus kiekis, atliekų buvimo vieta ir kt. Jūsų nuomone svarbi informacija"></textarea>
-									</div>
-								</div>
-
-								<div class="col-sm-12">
-
-									<div class="contact-form-submit topmargin_20">
-										<button type="submit" id="pickup-_submit" name="contact_submit" class="theme_button color1">Užsakyti atliekų išvežimą</button>
-									</div>
-								</div>
+                <div class="contact-form-submit topmargin_20">
+                  <button type="submit" id="pickup-_submit" name="contact_submit" class="theme_button color1">Užsakyti atliekų išvežimą</button>
+                </div>
+              </div>
 
 
-							</form>
+            </form>
 
-						</div>
-					</div>
-				</div>
-			</section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<section id="services" class="ls ms section_padding_100">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h2 class="section_header with_icon">
-								Mūsų Paslaugos
-							</h2>
-							<p class="small-text grey">Kuo mes užsiimame?</p>
-						</div>
-					</div>
-					<div class="row columns_margin_bottom_20">
-						<div class="col-md-4 col-sm-6">
-							<article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
-								<div class="item-media">
-									<img src="images/gallery/09.jpg" alt="">
-								</div>
-								<div class="item-content">
-									<h4 class="entry-title">
-										<a href="./pavojingos-atliekos">Pavojingų atliekų tvarkymas</a>
-									</h4>
-									<p class="margin_0">
-							Visų pavojingų atliekų surinkimas, išvežimas ir galutinis sutvarkymas.
-						</p>
-									<a href="./pavojingos-atliekos" class="read-more"></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
-								<div class="item-media">
-									<img src="images/gallery/10.jpg" alt="">
-								</div>
-								<div class="item-content">
-									<h4 class="entry-title">
-										<a href="./gamybines-atliekos">Gamybinių atliekų tvarkymas</a>
-									</h4>
-									<p class="margin_0">
-							Įvarių medienos, plastiko, metalo, elektronikos atliekų, antrinių žaliavų surinkimas, supirkimas, išvežimas ir tvarkymas.
-						</p>
-									<a href="./gamybines-atliekos" class="read-more"></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
-							<article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
-								<div class="item-media">
-									<img src="images/gallery/03.jpg" alt="">
-								</div>
-								<div class="item-content">
-									<h4 class="entry-title">
-										<a href="./konsultacijos">Aplinkos apsaugos konsultacijos</a>
-									</h4>
-									<p class="margin_0">
-							Konsultacijos aplinkos apsaugos, atliekų tvarkymo, GPAIS apskaitos ir kt. klausimais.
-						</p>
-									<a href="./konsultacijos" class="read-more"></a>
-								</div>
-							</article>
-						</div>
-					</div>
-					<div class="row topmargin_30">
-						<div class="col-sm-12 text-center">
-							<a href="./paslaugos" class="theme_button wide_button color1">
-								Visos mūsų teikiamos paslaugos
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
+    <section id="services" class="ls ms section_padding_100">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="section_header with_icon">
+              Mūsų Paslaugos
+            </h2>
+            <p class="small-text grey">Kuo mes užsiimame?</p>
+          </div>
+        </div>
+        <div class="row columns_margin_bottom_20">
+          <div class="col-md-4 col-sm-6">
+            <article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+              <div class="item-media">
+                <img src="images/gallery/09.jpg" alt="">
+              </div>
+              <div class="item-content">
+                <h4 class="entry-title">
+                  <a href="./pavojingos-atliekos">Pavojingų atliekų tvarkymas</a>
+                </h4>
+                <p class="margin_0">
+            Visų pavojingų atliekų surinkimas, išvežimas ir galutinis sutvarkymas.
+          </p>
+                <a href="./pavojingos-atliekos" class="read-more"></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+              <div class="item-media">
+                <img src="images/gallery/10.jpg" alt="">
+              </div>
+              <div class="item-content">
+                <h4 class="entry-title">
+                  <a href="./gamybines-atliekos">Gamybinių atliekų tvarkymas</a>
+                </h4>
+                <p class="margin_0">
+            Įvarių medienos, plastiko, metalo, elektronikos atliekų, antrinių žaliavų surinkimas, supirkimas, išvežimas ir tvarkymas.
+          </p>
+                <a href="./gamybines-atliekos" class="read-more"></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
+            <article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+              <div class="item-media">
+                <img src="images/gallery/03.jpg" alt="">
+              </div>
+              <div class="item-content">
+                <h4 class="entry-title">
+                  <a href="./konsultacijos">Aplinkos apsaugos konsultacijos</a>
+                </h4>
+                <p class="margin_0">
+            Konsultacijos aplinkos apsaugos, atliekų tvarkymo, GPAIS apskaitos ir kt. klausimais.
+          </p>
+                <a href="./konsultacijos" class="read-more"></a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row topmargin_30">
+          <div class="col-sm-12 text-center">
+            <a href="./paslaugos" class="theme_button wide_button color1">
+              Visos mūsų teikiamos paslaugos
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<section class="ls overflow_hidden half_section section_padding_top_100 section_padding_bottom_150 columns_padding_80">
-				<div class="image_cover image_cover_left">
-					<!-- you can put your image here instead of puting it in column-->
-					<!-- <img src="img/parallax/half_image.jpg" alt=""> -->
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-6">
-							<img src="img/parallax/half_image.jpg" alt="">
-						</div>
-						<!-- .col-* -->
-						<div class="col-md-6">
+    <section class="ls overflow_hidden half_section section_padding_top_100 section_padding_bottom_150 columns_padding_80">
+      <div class="image_cover image_cover_left">
+        <!-- you can put your image here instead of puting it in column-->
+        <!-- <img src="img/parallax/half_image.jpg" alt=""> -->
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/parallax/half_image.jpg" alt="">
+          </div>
+          <!-- .col-* -->
+          <div class="col-md-6">
 
-							<h2 class="section_header with_icon">
-								Mūsų misija
-							</h2>
-				<p>
-					Mūsų misija užtikrinti kuo mažesnį laidojimui arba šalinimui patenkančių atliekų kiekį, naudojant šiuolaikiškus, ekonomiškai efektyvius bei darnius atliekų tvarkymo sprendimus:
-				</p>
+            <h2 class="section_header with_icon">
+              Mūsų misija
+            </h2>
+      <p>
+        Mūsų misija užtikrinti kuo mažesnį laidojimui arba šalinimui patenkančių atliekų kiekį, naudojant šiuolaikiškus, ekonomiškai efektyvius bei darnius atliekų tvarkymo sprendimus:
+      </p>
 
-							<div class="panel-group" id="accordion1">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
-												<i class="fa fa-envelope"></i>
-												Atliekų prevencija
-											</a>
-										</h4>
-									</div>
-									<div id="collapse1" class="panel-collapse collapse in">
-										<div class="panel-body">
-										Pagal ES ir Lietuvos Respublikos atliekų tvarkymą reglamentuojančius teisės aktus, pagrindinis prioritetas turi būti skiriamas atliekų prevencijai, kurios tikslas – vengti atliekų susidarymo, mažinti susidarančių ir nenaudojamų atliekų kiekį.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" class="collapsed">
-												<i class="fa fa-envelope"></i>
-												Antrinis panaudojimas
-											</a>
-										</h4>
-									</div>
-									<div id="collapse2" class="panel-collapse collapse">
-										<div class="panel-body">
-										Įgyvendinant Žiedinės ekonomikos nuostatas bei pritaikant Švaresnės gamybos koncepciją, kuomet yra siekiama padidinti gamybos efektyvumą tuo pačiu sumažinant neigiamą poveikį aplinkai, labai svarbiu uždaviniu tampa racionalus įvairių atliekų antrinis panaudojimas. Diegiant atliekų priskyrimo prie šalutinio produkto bei atliekų antrinio panaudojimo programas, dalis naujų žaliavų gali būti pakeičiamos atliekomis ar šalutiniais produktais. 	
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" class="collapsed">
-												<i class="fa fa-envelope"></i>
-												Atliekų perdirbimas
-											</a>
-										</h4>
-									</div>
-									<div id="collapse3" class="panel-collapse collapse">
-										<div class="panel-body">
-										Kuomet atliekų ar šalutinių produktų be papildomo apdorojimo panaudoti neįmanoma, remiantis atliekų tvarkymo hierarchijos principais, atliekos turi būti perdirbamos. Šiuo metu tai plačiai taikoma metalų industrijoje, popieriaus, kartono ir plėvelės gamyboje, kuomet daugiau nei 80% atliekos, gali būti prikelta "antram gyvenimui". Kuriant bei naudojant šiuolaikišką atliekų perdirbimo įrangą, tikimasi, jog mažės laidojamų atliekų kiekis, ir atitinkamai didės perdirbamų atliekų kiekis.	
-										</div>
-									</div>
-								</div>
-							</div>
+            <div class="panel-group" id="accordion1">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+                      <i class="fa fa-envelope"></i>
+                      Atliekų prevencija
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                  Pagal ES ir Lietuvos Respublikos atliekų tvarkymą reglamentuojančius teisės aktus, pagrindinis prioritetas turi būti skiriamas atliekų prevencijai, kurios tikslas – vengti atliekų susidarymo, mažinti susidarančių ir nenaudojamų atliekų kiekį.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" class="collapsed">
+                      <i class="fa fa-envelope"></i>
+                      Antrinis panaudojimas
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  Įgyvendinant Žiedinės ekonomikos nuostatas bei pritaikant Švaresnės gamybos koncepciją, kuomet yra siekiama padidinti gamybos efektyvumą tuo pačiu sumažinant neigiamą poveikį aplinkai, labai svarbiu uždaviniu tampa racionalus įvairių atliekų antrinis panaudojimas. Diegiant atliekų priskyrimo prie šalutinio produkto bei atliekų antrinio panaudojimo programas, dalis naujų žaliavų gali būti pakeičiamos atliekomis ar šalutiniais produktais.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" class="collapsed">
+                      <i class="fa fa-envelope"></i>
+                      Atliekų perdirbimas
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  Kuomet atliekų ar šalutinių produktų be papildomo apdorojimo panaudoti neįmanoma, remiantis atliekų tvarkymo hierarchijos principais, atliekos turi būti perdirbamos. Šiuo metu tai plačiai taikoma metalų industrijoje, popieriaus, kartono ir plėvelės gamyboje, kuomet daugiau nei 80% atliekos, gali būti prikelta "antram gyvenimui". Kuriant bei naudojant šiuolaikišką atliekų perdirbimo įrangą, tikimasi, jog mažės laidojamų atliekų kiekis, ir atitinkamai didės perdirbamų atliekų kiekis.
+                  </div>
+                </div>
+              </div>
+            </div>
 
-						</div>
-						<!-- .col-* -->
-
-
-					</div>
-				</div>
-
-			</section>
+          </div>
+          <!-- .col-* -->
 
 
-			<section id="faq" class="ls ms section_padding_100">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h2 class="section_header with_icon">
-								D.U.K.
-							</h2>
-							<p class="small-text grey bottommargin_0">Dažniausiai Užduodami Klausimai</p>
-						</div>
-					</div>
-					<div class="row columns_margin_top_60">
-						<div class="col-md-4">
-							<div class="teaser with_background rounded text-center">
-								<div class="teaser_icon main_bg_color2 round offset_icon fontsize_30">
-									<h3 class="margin_0">?</h3>
-								</div>
-								<h4 class="poppins">
-									Kokias atliekas galite sutvarkyti?
-								</h4>
-								<p>
-						Tvarkome visas pavojingas ir nepavojingas atliekas. Parašykite mums užklausimą arba tiesiog paskambinkite. Mes surasime priimtiniausią Jums sprendimą.
-					</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="teaser with_background rounded text-center">
-								<div class="teaser_icon main_bg_color3 round offset_icon fontsize_30">
-									<h3 class="margin_0">?</h3>
-								</div>
-								<h4 class="poppins">
-									Kaip įsitikinti ar atliekos sutvarkomos tinkamai?
-								</h4>
-								<p>
-						Mūsų įmonei yra išduotas Taršos leidimas Nr. XX, Pavojingų atliekų tvarkymo licencija Nr. 001017, bei patvirtinta registracija Atliekų tvarkytojų valstybiniame registre. Visos atliekos tvarkomos griežtai laikantis LR ir ES keliamų reikalvimų. Esame skaidrus verslas - esant poreikiui supažindiname klientą su visu atliekos tvarkymo procesu nuo surinkimo iki galutinio sutvarkymo. 
-					</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="teaser with_background rounded text-center">
-								<div class="teaser_icon main_bg_color round offset_icon fontsize_30">
-									<h3 class="margin_0">?</h3>
-								</div>
-								<h4 class="poppins">
-									Kiek kainuoja atliekų tvarkymo paslaugos?
-								</h4>
-								<p>
-						Atliekų tvarkymo paslaugų kaina kinta nuo atliekų pobūdžio, kiekio ir kitų aspektų. Už vieną dalį atliekų tvarkymo paslaugų tenka mokėti atliekų turėtojams, už kitą dalį atliekų turėtojams moka atliekų tvarkytojas. Susisiekite su mumis ir mes pateiksime Jums komercinį pasiūlymą!
-					</p>
-							</div>
-						</div>
-					</div>
-					<div class="row topmargin_30">
-						<div class="col-sm-12 text-center">
-							<a href="./duk" class="theme_button color1 wide_button">
-								Visi klausimai
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
+        </div>
+      </div>
 
-			<footer class="page_footer ds ms bg_image section_padding_50">
-				<div class="container">
-					<div class="row">
+    </section>
 
-						<div class="col-md-4 col-sm-6 to_animate">
-							<div class="widget_text">
-								<h3 class="widget-title">Kodėl mes?</h3>
-								<p>Mes užtikriname, kad Jūsų atliekos bus sutvarkomos tinkamai, greitai, nesukeliant rūpesčių Jums. Visuomet tikimės pasiūlyti geriausią teikiamų paslaugų kainą rinkoje!</p>
-							</div>
-						</div>
 
-						<div class="col-md-4 col-sm-6 to_animate">
-							<div class="widget_text">
-								<h3 class="widget-title">Susisiekite su mumis!</h3>
-								<p>Mus rasite: Drobės g. 66, Kaunas LT-45181</p>
-								<ul class="list1 no-bullets">
-									<li>
-										<i class="rt-icon2-device-phone highlight"></i> +370 37 300816
-									</li>
-									<li>
-										<i class="rt-icon2-globe-outline highlight"></i> <a href="http://alvinta.lt">www.alvinta.lt</a>
-									</li>
-									<li>
-										<i class="rt-icon2-mail2 highlight"></i> <a href="mailto:info@alvinta.lt">info@alvinta.lt</a>
-									</li>
+    <section id="faq" class="ls ms section_padding_100">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="section_header with_icon">
+              D.U.K.
+            </h2>
+            <p class="small-text grey bottommargin_0">Dažniausiai Užduodami Klausimai</p>
+          </div>
+        </div>
+        <div class="row columns_margin_top_60">
+          <div class="col-md-4">
+            <div class="teaser with_background rounded text-center">
+              <div class="teaser_icon main_bg_color2 round offset_icon fontsize_30">
+                <h3 class="margin_0">?</h3>
+              </div>
+              <h4 class="poppins">
+                Kokias atliekas galite sutvarkyti?
+              </h4>
+              <p>
+          Tvarkome visas pavojingas ir nepavojingas atliekas. Parašykite mums užklausimą arba tiesiog paskambinkite. Mes surasime priimtiniausią Jums sprendimą.
+        </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="teaser with_background rounded text-center">
+              <div class="teaser_icon main_bg_color3 round offset_icon fontsize_30">
+                <h3 class="margin_0">?</h3>
+              </div>
+              <h4 class="poppins">
+                Kaip įsitikinti ar atliekos sutvarkomos tinkamai?
+              </h4>
+              <p>
+          Mūsų įmonei yra išduotas Taršos leidimas Nr. XX, Pavojingų atliekų tvarkymo licencija Nr. 001017, bei patvirtinta registracija Atliekų tvarkytojų valstybiniame registre. Visos atliekos tvarkomos griežtai laikantis LR ir ES keliamų reikalvimų. Esame skaidrus verslas - esant poreikiui supažindiname klientą su visu atliekos tvarkymo procesu nuo surinkimo iki galutinio sutvarkymo.
+        </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="teaser with_background rounded text-center">
+              <div class="teaser_icon main_bg_color round offset_icon fontsize_30">
+                <h3 class="margin_0">?</h3>
+              </div>
+              <h4 class="poppins">
+                Kiek kainuoja atliekų tvarkymo paslaugos?
+              </h4>
+              <p>
+          Atliekų tvarkymo paslaugų kaina kinta nuo atliekų pobūdžio, kiekio ir kitų aspektų. Už vieną dalį atliekų tvarkymo paslaugų tenka mokėti atliekų turėtojams, už kitą dalį atliekų turėtojams moka atliekų tvarkytojas. Susisiekite su mumis ir mes pateiksime Jums komercinį pasiūlymą!
+        </p>
+            </div>
+          </div>
+        </div>
+        <div class="row topmargin_30">
+          <div class="col-sm-12 text-center">
+            <a href="./duk" class="theme_button color1 wide_button">
+              Visi klausimai
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-								</ul>
+    <footer class="page_footer ds ms bg_image section_padding_50">
+      <div class="container">
+        <div class="row">
 
-							</div>
-						</div>
+          <div class="col-md-4 col-sm-6 to_animate">
+            <div class="widget_text">
+              <h3 class="widget-title">Kodėl mes?</h3>
+              <p>Mes užtikriname, kad Jūsų atliekos bus sutvarkomos tinkamai, greitai, nesukeliant rūpesčių Jums. Visuomet tikimės pasiūlyti geriausią teikiamų paslaugų kainą rinkoje!</p>
+            </div>
+          </div>
 
-						<div class="col-md-4 col-sm-6 to_animate">
-							<div class="widget_text">
-								<h3 class="widget-title">Sekite mus socialinėje medijoje:</h3>
-								<div class="media small-teaser">
-									<div class="media-left media-middle">
-										<a href="#" class="social-icon color-icon border-icon rounded-icon soc-facebook"></a>
-									</div>
-									<div class="media-body media-middle">
-										Facebook
-									</div>
-								</div>
-								<div class="media small-teaser">
-									<div class="media-left media-middle">
-										<a href="#" class="social-icon color-icon border-icon rounded-icon soc-twitter"></a>
-									</div>
-									<div class="media-body media-middle">
-										Twitter
-									</div>
-								</div>
-								<div class="media small-teaser">
-									<div class="media-left media-middle">
-										<a href="#" class="social-icon color-icon border-icon rounded-icon soc-linkedin"></a>
-									</div>
-									<div class="media-body media-middle">
-										LinkedIn
-									</div>
-								</div>
+          <div class="col-md-4 col-sm-6 to_animate">
+            <div class="widget_text">
+              <h3 class="widget-title">Susisiekite su mumis!</h3>
+              <p>Mus rasite: Drobės g. 66, Kaunas LT-45181</p>
+              <ul class="list1 no-bullets">
+                <li>
+                  <i class="rt-icon2-device-phone highlight"></i> +370 37 300816
+                </li>
+                <li>
+                  <i class="rt-icon2-globe-outline highlight"></i> <a href="http://alvinta.lt">www.alvinta.lt</a>
+                </li>
+                <li>
+                  <i class="rt-icon2-mail2 highlight"></i> <a href="mailto:info@alvinta.lt">info@alvinta.lt</a>
+                </li>
 
-							</div>
+              </ul>
 
-						</div>
-					</div>
-				</div>
-			</footer>
+            </div>
+          </div>
 
-			<section class="page_copyright ls ms section_padding_25 table_section table_section_md with_top_border">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-sm text-center">
-							<p>
-								&copy; Copyright 2019 UAB Alvinta
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+          <div class="col-md-4 col-sm-6 to_animate">
+            <div class="widget_text">
+              <h3 class="widget-title">Sekite mus socialinėje medijoje:</h3>
+              <div class="media small-teaser">
+                <div class="media-left media-middle">
+                  <a href="#" class="social-icon color-icon border-icon rounded-icon soc-facebook"></a>
+                </div>
+                <div class="media-body media-middle">
+                  Facebook
+                </div>
+              </div>
+              <div class="media small-teaser">
+                <div class="media-left media-middle">
+                  <a href="#" class="social-icon color-icon border-icon rounded-icon soc-twitter"></a>
+                </div>
+                <div class="media-body media-middle">
+                  Twitter
+                </div>
+              </div>
+              <div class="media small-teaser">
+                <div class="media-left media-middle">
+                  <a href="#" class="social-icon color-icon border-icon rounded-icon soc-linkedin"></a>
+                </div>
+                <div class="media-body media-middle">
+                  LinkedIn
+                </div>
+              </div>
 
-		</div>
-		<!-- eof #box_wrapper -->
-	</div>
-	<!-- eof #canvas -->
+            </div>
 
-	<script src="js/compressed.js"></script>
-	<script src="js/main.js"></script>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="page_copyright ls ms section_padding_25 table_section table_section_md with_top_border">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-sm text-center">
+            <p>
+              &copy; Copyright 2019 UAB Alvinta
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="js/compressed.js"></script>
+<script src="js/main.js"></script>
 <script>
 (function () {
   document.querySelector('input[name="_after"]').value = window.location.href;
 })();
 </script>
-</body>
 
+</body>
 </html>
