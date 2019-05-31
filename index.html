@@ -295,30 +295,26 @@
             <h2 class="section_header with_icon">
               Užsakyti atliekų išvežimą
             </h2>
-            <form method="post" action="https://mailthis.to/uabalvinta" class="contact-form row columns_margin_bottom_20">
-              <input type="hidden" name="_honeypot" value="">
+            <form method="post" action="https://formspree.io/info@alvinta.lt" class="contact-form row columns_margin_bottom_20">
               <input type="hidden" name="_subject" value="Atliekų išvežimo užsakymas">
-              <input type="hidden" name="_after" value="https://alvinta.lt/">
-              <input type="hidden" name="_confirmation" value="Jūsų informacija gauta. Susisieksime su Jumis artimiausiu metu.">
-
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="pickup-name">
-                                          Jūsų vardas, pavardė
+                    Jūsų vardas, pavardė
                     <span class="required">*</span>
                   </label>
                   <i class="fa fa-user highlight2" aria-hidden="true"></i>
-                  <input type="text" aria-required="true" size="30" value="" name="name" id="pickup-name" class="form-control" placeholder="Jūsų vardas, pavardė">
+                  <input type="text" aria-required="true" size="30" name="name" id="pickup-name" class="form-control" placeholder="Jūsų vardas, pavardė">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="pickup-phone">
-                                          Telefono numeris
+                    Telefono numeris
                     <span class="required">*</span>
                   </label>
                   <i class="fa fa-phone highlight2" aria-hidden="true"></i>
-                  <input type="text" aria-required="true" size="30" value="" name="phone" id="pickup-phone" class="form-control" placeholder="Telefono numeris">
+                  <input type="text" aria-required="true" size="30" name="phone" id="pickup-phone" class="form-control" placeholder="Telefono numeris">
                 </div>
               </div>
               <div class="col-md-6">
@@ -328,17 +324,17 @@
                     <span class="required">*</span>
                   </label>
                   <i class="fa fa-envelope highlight2" aria-hidden="true"></i>
-                  <input type="email" aria-required="true" size="30" value="" name="_replyto" id="pickup-email" class="form-control" placeholder="El. Pašto adresas">
+                  <input type="email" aria-required="true" size="30" name="_replyto" id="pickup-email" class="form-control" placeholder="El. Pašto adresas">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group select-group">
                   <label for="pickup-date">
-                                          Pageidaujama atliekų paėmimo data
+                    Pageidaujama atliekų paėmimo data
                     <span class="required">*</span>
                   </label>
                   <i class="fa fa-calendar highlight2" aria-hidden="true"></i>
-                  <input type="text" data-input-type="date" aria-required="true" size="30" value="" name="date" id="pickup-date" class="form-control" placeholder="Data">
+                  <input type="text" data-input-type="date" aria-required="true" size="30" name="date" id="pickup-date" class="form-control" placeholder="Data">
                 </div>
               </div>
               <div class="col-md-3">
@@ -520,8 +516,6 @@
       </div>
 
     </section>
-
-
     <section id="faq" class="ls ms section_padding_100">
       <div class="container">
         <div class="row">
@@ -529,7 +523,9 @@
             <h2 class="section_header with_icon">
               D.U.K.
             </h2>
-            <p class="small-text grey bottommargin_0">Dažniausiai Užduodami Klausimai</p>
+            <p class="small-text grey bottommargin_0">
+              Dažniausiai Užduodami Klausimai
+            </p>
           </div>
         </div>
         <div class="row columns_margin_top_60">
@@ -542,8 +538,10 @@
                 Kokias atliekas galite sutvarkyti?
               </h4>
               <p>
-          Tvarkome visas pavojingas ir nepavojingas atliekas. Parašykite mums užklausimą arba tiesiog paskambinkite. Mes surasime priimtiniausią Jums sprendimą.
-        </p>
+                Tvarkome visas pavojingas ir nepavojingas atliekas. Parašykite
+                mums užklausimą arba tiesiog paskambinkite. Mes surasime
+                priimtiniausią Jums sprendimą.
+              </p>
             </div>
           </div>
           <div class="col-md-4">
@@ -555,8 +553,14 @@
                 Kaip įsitikinti ar atliekos sutvarkomos tinkamai?
               </h4>
               <p>
-          Mūsų įmonei yra išduotas Taršos leidimas Nr. XX, Pavojingų atliekų tvarkymo licencija Nr. 001017, bei patvirtinta registracija Atliekų tvarkytojų valstybiniame registre. Visos atliekos tvarkomos griežtai laikantis LR ir ES keliamų reikalvimų. Esame skaidrus verslas - esant poreikiui supažindiname klientą su visu atliekos tvarkymo procesu nuo surinkimo iki galutinio sutvarkymo.
-        </p>
+                Mūsų įmonei yra išduotas Taršos leidimas Nr. XX, Pavojingų
+                atliekų tvarkymo licencija Nr. 001017, bei patvirtinta
+                registracija Atliekų tvarkytojų valstybiniame registre. Visos
+                atliekos tvarkomos griežtai laikantis LR ir ES keliamų
+                reikalvimų. Esame skaidrus verslas - esant poreikiui
+                supažindiname klientą su visu atliekos tvarkymo procesu nuo
+                surinkimo iki galutinio sutvarkymo.
+              </p>
             </div>
           </div>
           <div class="col-md-4">
@@ -568,8 +572,12 @@
                 Kiek kainuoja atliekų tvarkymo paslaugos?
               </h4>
               <p>
-          Atliekų tvarkymo paslaugų kaina kinta nuo atliekų pobūdžio, kiekio ir kitų aspektų. Už vieną dalį atliekų tvarkymo paslaugų tenka mokėti atliekų turėtojams, už kitą dalį atliekų turėtojams moka atliekų tvarkytojas. Susisiekite su mumis ir mes pateiksime Jums komercinį pasiūlymą!
-        </p>
+                Atliekų tvarkymo paslaugų kaina kinta nuo atliekų pobūdžio,
+                kiekio ir kitų aspektų. Už vieną dalį atliekų tvarkymo paslaugų
+                tenka mokėti atliekų turėtojams, už kitą dalį atliekų turėtojams
+                moka atliekų tvarkytojas. Susisiekite su mumis ir mes pateiksime
+                Jums komercinį pasiūlymą!
+              </p>
             </div>
           </div>
         </div>
@@ -582,22 +590,23 @@
         </div>
       </div>
     </section>
-
     <footer class="page_footer ds ms bg_image section_padding_50">
       <div class="container">
         <div class="row">
-
           <div class="col-md-4 col-sm-6 to_animate">
             <div class="widget_text">
               <h3 class="widget-title">Kodėl mes?</h3>
-              <p>Mes užtikriname, kad Jūsų atliekos bus sutvarkomos tinkamai, greitai, nesukeliant rūpesčių Jums. Visuomet tikimės pasiūlyti geriausią teikiamų paslaugų kainą rinkoje!</p>
+              <p>
+                Mes užtikriname, kad Jūsų atliekos bus sutvarkomos tinkamai,
+                greitai, nesukeliant rūpesčių Jums. Visuomet tikimės pasiūlyti
+                geriausią teikiamų paslaugų kainą rinkoje!
+              </p>
             </div>
           </div>
-
           <div class="col-md-4 col-sm-6 to_animate">
             <div class="widget_text">
-              <h3 class="widget-title">Susisiekite su mumis!</h3>
-              <p>Mus rasite: Drobės g. 66, Kaunas LT-45181</p>
+              <h3 class="widget-title">Susisiekite su mumis</h3>
+              <p>Drobės g. 66, Kaunas LT-45181</p>
               <ul class="list1 no-bullets">
                 <li>
                   <i class="rt-icon2-device-phone highlight"></i> +370 37 300816
@@ -608,12 +617,9 @@
                 <li>
                   <i class="rt-icon2-mail2 highlight"></i> <a href="mailto:info@alvinta.lt">info@alvinta.lt</a>
                 </li>
-
               </ul>
-
             </div>
           </div>
-
           <div class="col-md-4 col-sm-6 to_animate">
             <div class="widget_text">
               <h3 class="widget-title">Sekite mus socialinėje medijoje:</h3>
@@ -641,14 +647,11 @@
                   LinkedIn
                 </div>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
     </footer>
-
     <section class="page_copyright ls ms section_padding_25 table_section table_section_md with_top_border">
       <div class="container">
         <div class="row">
