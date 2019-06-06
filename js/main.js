@@ -166,78 +166,9 @@ function initAnimateElement(self, index) {
 		self.addClass("animated " + animationClass);
 	}, index * animationDelay);
 }
-function initCounter(self) {
-	if (self.hasClass('counted')) {
-		return;
-	} else {
-		self.countTo().addClass('counted');
-	}
-}
-function initProgressbar(el) {
-	el.progressbar({
-		transition_delay: 300
-	});
-}
-function initChart(el) {
-	var data = el.data();
-	var size = data.size ? data.size : 270;
-	var line = data.line ? data.line : 20;
-	var bgcolor = data.bgcolor ? data.bgcolor : '#ffffff';
-	var trackcolor = data.trackcolor ? data.trackcolor : '#c14240';
-	var speed = data.speed ? data.speed : 3000;
-
-	el.easyPieChart({
-		barColor: trackcolor,
-		trackColor: bgcolor,
-		scaleColor: false,
-		scaleLength: false,
-		lineCap: 'butt',
-		lineWidth: line,
-		size: size,
-		rotate: 0,
-		animate: speed,
-		onStep: function(from, to, percent) {
-			jQuery(this.el).find('.percent').text(Math.round(percent));
-		}
-	});
-}
 
 //function that initiating template plugins on window.load event
 function windowLoadInit() {
-
-	////////////
-	//mainmenu//
-	////////////
-	if (jQuery().scrollbar) {
-		jQuery('[class*="scrollbar-"]').scrollbar();
-	}
-	if (jQuery().superfish) {
-		jQuery('ul.sf-menu').superfish({
-			popUpSelector: 'ul:not(.mega-menu ul), .mega-menu ',
-			delay:       700,
-			animation:   {opacity:'show', marginTop: 0},
-			animationOut: {opacity: 'hide',  marginTop: 5},
-			speed:       200,
-			speedOut:    200,
-			disableHI:   false,
-			cssArrows:   true,
-			autoArrows:  true
-
-		});
-		jQuery('ul.sf-menu-side').superfish({
-			popUpSelector: 'ul:not(.mega-menu ul), .mega-menu ',
-			delay:       500,
-			animation:   {opacity:'show', height: 100 +'%'},
-			animationOut: {opacity: 'hide',  height: 0},
-			speed:       400,
-			speedOut:    300,
-			disableHI:   false,
-			cssArrows:   true,
-			autoArrows:  true
-		});
-	}
-
-	
 	//toggle mobile menu
 	jQuery('.toggle_menu').on('click', function(){
 		jQuery(this)
@@ -415,15 +346,6 @@ function windowLoadInit() {
 		jQuery('.parallax').parallax("50%", 0.01);
 	}
 	
-	//prettyPhoto
-	if (jQuery().prettyPhoto) {
-		jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({
-			hook: 'data-gal',
-			theme: 'facebook', /* light_rounded / dark_rounded / light_square / dark_square / facebook / pp_default*/
-			social_tools: false
-		});
-	}
-	
 	////////////////////////////////////////
 	//init Bootstrap JS components//
 	////////////////////////////////////////
@@ -499,51 +421,12 @@ function windowLoadInit() {
 			
 		})
 	});
-	
-	//twitter
-	if (jQuery().tweet) {
-		jQuery('.twitter').tweet({
-			modpath: "./twitter/",
-			count: 1,
-			avatar_size: 48,
-			loading_text: 'loading twitter feed...',
-			join_text: 'auto',
-			username: 'michaeljackson', 
-			template: "<span class=\"darklinks\">{user}</span><span class=\"tweet_text\">{tweet_text}</span><span class=\"highlightlinks\">{time}</span>"
-		});
-	}
-
 
 	//adding CSS classes for elements that needs different styles depending on they widht width
 	//see 'plugins.js' file
 	jQuery('#mainteasers .col-lg-4').addWidthClass({
 		breakpoints: [500, 600]
 	});
-
-	// init timetable
-	var $timetable = jQuery('#timetable');
-	if ($timetable.length) {
-		// bind filter click
-		jQuery('#timetable_filter').on( 'click', 'a', function( e ) {
-			e.preventDefault();
-			e.stopPropagation();
-			var $thisA = jQuery(this);
-			if ( $thisA.hasClass('selected') ) {
-				// return false;
-				return;
-			}
-			var selector = $thisA.attr('data-filter');
-			$timetable
-				.find('tbody td')
-				.removeClass('current')
-				.end()
-				.find(selector)
-				.closest('td')
-				.addClass('current');
-			$thisA.closest('ul').find('a').removeClass('selected');
-			$thisA.addClass('selected');
-	  });
-	}
 
 	/////////
 	//SHOP///
@@ -563,74 +446,6 @@ function windowLoadInit() {
 			loadingIcon: 'img/AjaxLoader.gif'
 		});
 	}
-	
-	//add review button
-	jQuery('.review-link').on('click', function( e ) {
-		var $thisLink = jQuery(this);
-		var reviewTabLink = jQuery('a[href="#reviews_tab"]');
-		//show tab only if it's hidden
-		if (!reviewTabLink.parent().hasClass('active')) {
-			reviewTabLink
-			.tab('show')
-			.on('shown.bs.tab', function (e) {
-				$window.scrollTo($thisLink.attr('href'), 400);
-			})
-		}
-		$window.scrollTo($thisLink.attr('href'), 400);
-	});
-
-	//product counter
-	jQuery('.plus, .minus').on('click', function( e ) {
-		var numberField = jQuery(this).parent().find('[type="number"]');
-		var currentVal = numberField.val();
-		var sign = jQuery(this).val();
-		if (sign === '-') {
-			if (currentVal > 1) {
-				numberField.val(parseFloat(currentVal) - 1);
-			}
-		} else {
-			numberField.val(parseFloat(currentVal) + 1);
-		}
-	});
-	
-	//remove product from cart
-	jQuery('a.remove').on('click', function( e ) {
-		e.preventDefault();
-		jQuery(this).closest('tr, .media').remove();
-	});
-
-	//price filter - only for HTML
-	if (jQuery().slider) {
-		var $rangeSlider = jQuery(".slider-range-price");
-		if ($rangeSlider.length) {
-			var $priceMin = jQuery(".slider_price_min");
-			var $priceMax = jQuery(".slider_price_max");
-			var $priceMinLabel = jQuery(".slider_price_min_label");
-			var $priceMaxLabel = jQuery(".slider_price_max_label");
-			$rangeSlider.slider({
-				range: true,
-				min: 0,
-				max: 250,
-				values: [ 30, 100 ],
-				slide: function( event, ui ) {
-					$priceMin.val( ui.values[ 0 ] );
-					$priceMinLabel.text(ui.values[ 0 ]);
-					$priceMax.val( ui.values[ 1 ] );
-					$priceMaxLabel.text(ui.values[ 1 ]);
-				}
-			});
-			$priceMin.val($rangeSlider.slider("values", 0));
-			$priceMinLabel.text($rangeSlider.slider("values", 0));
-			$priceMax.val($rangeSlider.slider("values", 1));
-			$priceMaxLabel.text($rangeSlider.slider("values", 1));
-		}
-	}
-
-	//color filter 
-	jQuery(".color-filters").find("a[data-background-color]").each(function() {
-		jQuery(this).css({"background-color" : jQuery(this).data("background-color")});
-	}); // end of SHOP
-	///eof docready
 
 	//////////////
 	//flexslider//
@@ -796,170 +611,6 @@ function windowLoadInit() {
 				initAnimateElement(jQuery(this), index);
 			});
 		});
-
-		//counters init on scroll
-		if (jQuery().countTo) {
-			jQuery('.counter').appear();
-			
-			jQuery('.counter').filter(':appeared').each(function(){
-				initCounter(jQuery(this));
-			});
-			$body.on('appear', '.counter', function(e, $affected ) {
-				jQuery($affected).each(function(){
-					initCounter(jQuery(this));
-				});
-			});
-		}
-	
-		//bootstrap animated progressbar
-		if (jQuery().progressbar) {
-			jQuery('.progress .progress-bar').appear();
-
-			jQuery('.progress .progress-bar').filter(':appeared').each(function(){
-				initProgressbar(jQuery(this));
-			});
-			$body.on('appear', '.progress .progress-bar', function(e, $affected ) {
-				jQuery($affected).each(function(){
-					initProgressbar(jQuery(this));
-				});
-			});
-			//animate progress bar inside bootstrap tab
-			jQuery('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-				initProgressbar(jQuery(jQuery(e.target).attr('href')).find('.progress .progress-bar'));
-			});
-			//animate progress bar inside bootstrap dropdown
-			jQuery('.dropdown').on('shown.bs.dropdown', function(e) {
-				initProgressbar(jQuery(this).find('.progress .progress-bar'));
-			});
-		}
-
-		//circle progress bar
-		if (jQuery().easyPieChart) {
-
-			jQuery('.chart').appear();
-			
-			jQuery('.chart').filter(':appeared').each(function(){
-				initChart(jQuery(this));
-			});
-			$body.on('appear', '.chart', function(e, $affected ) {
-				jQuery($affected).each(function(){
-					initChart(jQuery(this));
-				});
-			});
-
-		}
-
-	} //appear check
-
-	//Flickr widget
-	// use http://idgettr.com/ to find your ID
-	if (jQuery().jflickrfeed) {
-		var $flickr = jQuery("#flickr, .flickr_ul");
-		if ( $flickr.length ) {
-			if ( ! ( $flickr.hasClass('flickr_loaded') ) ) {
-				$flickr.jflickrfeed({
-					flickrbase: "http://api.flickr.com/services/feeds/",
-					limit: 4,
-					qstrings: {
-						id: "131791558@N04"
-					},
-					itemTemplate: '<a href="{{image_b}}" data-gal="prettyPhoto[pp_gal]"><li><img alt="{{title}}" src="{{image_m}}" /></li></a>'
-				}, function(data) {
-					$flickr.find('a').prettyPhoto({
-						hook: 'data-gal',
-						theme: 'facebook'
-					});
-				}).addClass('flickr_loaded');
-			}
-		}
-	}
-
-	// Instagram widget
-	if(jQuery().spectragram) {
-		var Spectra = {
-			instaToken: '3905738328.60c782d.b65ed3f058d64e6ab32c110c6ac12d9b',
-			instaID: '60c782dfecaf4050b59ff4c159246641',
-
-			init: function () {
-				jQuery.fn.spectragram.accessData = {
-					accessToken: this.instaToken,
-					clientID: this.instaID
-				};
-
-				//available methods: getUserFeed, getRecentTagged
-				jQuery('.instafeed').each(function(){
-					var $this = jQuery(this);
-					if ($this.find('img').length) {
-						return;
-					}
-					$this.spectragram('getRecentTagged',{
-						max: 6,
-						//pass username if you are using getUserFeed method
-						query: 'grey',
-						wrapEachWith: '<div class="photo">'
-					});
-				});
-			}
-		}
-
-		Spectra.init();
-	}
-
-	//video images preview - from WP
-	jQuery('.embed-placeholder').each(function(){
-		jQuery(this).on('click', function(e) {
-			var $thisLink = jQuery(this);
-			// if prettyPhoto popup with YouTube - return
-			if ($thisLink.attr('data-gal')) {
-				return;
-			}
-			e.preventDefault();
-			if ($thisLink.attr('href') === '' || $thisLink.attr('href') === '#') {
-				$thisLink.replaceWith($thisLink.data('iframe').replace(/&amp/g, '&').replace(/$lt;/g, '<').replace(/&gt;/g, '>').replace(/$quot;/g, '"')).trigger('click');
-			} else {
-				$thisLink.replaceWith('<iframe class="embed-responsive-item" src="'+ $thisLink.attr('href') + '?rel=0&autoplay=1'+ '"></iframe>');
-			}
-		});
-	});
-
-	// init Isotope
-	jQuery('.isotope_container').each(function(index) {
-		var $container = jQuery(this);
-		var layoutMode = ($container.hasClass('masonry-layout')) ? 'masonry' : 'fitRows';
-		var columnWidth = ($container.find('.col-lg-20').length) ? '.col-lg-20' : '';
-		$container.isotope({
-			percentPosition: true,
-			layoutMode: layoutMode,
-			masonry: {
-				//for big first element in grid - giving smaller element to use as grid
-				columnWidth: columnWidth
-			}
-		});
-
-		var $filters = jQuery(this).attr('data-filters') ? jQuery(jQuery(this).attr('data-filters')) : $container.prev().find('.filters');
-		// bind filter click
-		if ($filters.length) {
-			$filters.on( 'click', 'a', function( e ) {
-				e.preventDefault();
-				var $thisA = jQuery(this);
-				var filterValue = $thisA.attr('data-filter');
-				$container.isotope({ filter: filterValue });
-				$thisA.siblings().removeClass('selected active');
-				$thisA.addClass('selected active');
-			});
-			//for works on select
-			$filters.on( 'change', 'select', function( e ) {
-				e.preventDefault();
-				var filterValue = jQuery(this).val();
-				$container.isotope({ filter: filterValue });
-			});
-		}
-	});
-
-	//Unyson or other messages modal
-	var $messagesModal = jQuery('#messages_modal');
-	if ($messagesModal.find('ul').length) {
-		$messagesModal.modal('show');
 	}
 
 	//page preloader
