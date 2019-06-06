@@ -8147,6 +8147,14 @@ section .intro_section .slide_description_wrapper {
   clear: both;
 }
 
+.intro_section .intro-layer p.with-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro_section .flexslider .intro-layer p {
+  color: #fff;
+}
+
 .intro_section .flexslider .intro-layer img {
   width: auto;
   display: inline-block;
