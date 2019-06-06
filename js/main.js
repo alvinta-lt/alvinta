@@ -539,21 +539,9 @@ function windowLoadInit() {
 		var headerHeight = $header.outerHeight();
 		$header.wrap('<div class="page_header_wrapper"></div>');
 		var $headerWrapper = $header.parent();
+		$headerWrapper.addClass('header_white');
 		if (!boxed) {
 			$headerWrapper.css({height: headerHeight}); 
-		}
-
-		//headerWrapper background
-		if( $header.hasClass('header_white') ) {
-			$headerWrapper.addClass('header_white');
-		} else if ( $header.hasClass('header_darkgrey') ) {
-			$headerWrapper.addClass('header_darkgrey');
-			if ( $header.hasClass('bs') ) {
-				$headerWrapper.addClass('bs');
-			}
-
-		} else if ( $header.hasClass('header_gradient') ) {
-			$headerWrapper.addClass('header_gradient');
 		}
 
 		//get offset
