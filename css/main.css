@@ -3536,9 +3536,7 @@ h3 + .section_header,
   height: 100%;
 }
 
-.no-js .preloader,
-.lt-ie9 .preloader,
-.lt-ie10 .preloader {
+.no-js .preloader {
   display: none;
 }
 
@@ -3557,9 +3555,7 @@ h3 + .section_header,
   visibility: hidden;
 }
 
-.no-js .to_animate,
-.lt-ie10 .to_animate,
-.lt-ie9 .to_animate {
+.no-js .to_animate {
   visibility: visible;
 }
 

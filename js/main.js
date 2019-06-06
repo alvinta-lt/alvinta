@@ -1,6 +1,8 @@
 'use strict';
 
-(function() {
+(function () {
+
+  document.querySelector('html').classList.remove('no-js');
 
 	var touchDevice = ('ontouchstart' in document.documentElement);
 	if (touchDevice) {
