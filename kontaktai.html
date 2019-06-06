@@ -289,6 +289,18 @@
 
 <script src="js/compressed.js"></script>
 <script src="js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOhbjANPQB4-ul2MhucG22arcKRzYy7kY&callback=initMap"></script>
+<script>
+function initMap() {
+  new google.maps.Map(document.getElementById('gmap'), {
+    center: {
+      lat: 54.8705453,
+      lng: 23.9522474,
+    },
+    zoom: 17,
+  });
+}
+</script>
 
 </body>
 </html>
