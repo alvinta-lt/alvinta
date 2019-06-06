@@ -307,13 +307,6 @@ function windowLoadInit() {
 			offset: navHeight 
 		})
 	}
-	if (jQuery().localScroll) {
-		jQuery('.mainmenu_wrapper > ul, .mainmenu_side_wrapper > ul, #land, .scroll_button_wrap').localScroll({
-			duration:900,
-			easing:'easeInOutQuart',
-			offset: -navHeight+40
-		});
-	}
 
 	//background image teaser and secitons with half image bg
 	//put this before prettyPhoto init because image may be wrapped in prettyPhoto link
