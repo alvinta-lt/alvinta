@@ -7484,10 +7484,6 @@ section .intro_section .slide_description_wrapper {
   clear: both;
 }
 
-.intro_section .intro-layer p.with-bg {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .intro_section .flexslider .intro-layer p {
   color: #fff;
 }
@@ -7539,7 +7535,10 @@ section .intro_section .slide_description_wrapper {
 }
 
 .intro_section .slide_description_wrapper .slide_description {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
   font-size: 14px;
+  padding: 16px;
 }
 
 .intro_section .slide_description_wrapper:before,
