@@ -83,59 +83,58 @@
         }
 
       }// > 991
-    }); //sf-menu each
-  } //menuHideExtraElements
+    });
+  }
 
   function affixSidebarInit() {
     var $affixAside = jQuery('.affix-aside');
     if ($affixAside.length) {
+      $affixAside.on('affix.bs.affix', function () {
+        var affixWidth = $affixAside.width() - 1;
+        var affixLeft = $affixAside.offset().left;
 
-        //on stick and unstick event
-        $affixAside.on('affix.bs.affix', function(e) {
-          var affixWidth = $affixAside.width() - 1;
-          var affixLeft = $affixAside.offset().left;
-          $affixAside
-            .width(affixWidth)
-            .css("left", affixLeft);
-        }).on('affix-top.bs.affix affix-bottom.bs.affix', function(e) {
-          $affixAside.css({"width": "", "left": ""});
+        $affixAside.width(affixWidth).css("left", affixLeft);
+      }).on('affix-top.bs.affix affix-bottom.bs.affix', function () {
+        $affixAside.css({
+          left: '',
+          width: '',
+        });
+      });
+
+      var offsetTop = $affixAside.offset().top - jQuery('.page_header').height();
+      var offsetBottom = jQuery('.page_footer').outerHeight(true) + jQuery('.page_copyright').outerHeight(true);
+
+      $affixAside.affix({
+        offset: {
+          top: offsetTop,
+          bottom: offsetBottom
+        },
+      });
+
+      jQuery(window).on('resize', function() {
+        $affixAside.css({
+          left: '',
+          width: '',
         });
 
-        //counting offset
-        var offsetTop = $affixAside.offset().top - jQuery('.page_header').height();
+        if ($affixAside.hasClass('affix')) {
+          $affixAside.removeClass('affix').css('left', '').addClass("affix-top");
+        }
+
+        var offsetTop = jQuery('.page_topline').outerHeight(true)
+                + jQuery('.page_toplogo').outerHeight(true)
+                + jQuery('.page_header').outerHeight(true)
+                + jQuery('.page_breadcrumbs').outerHeight(true)
+                + jQuery('.blog_slider').outerHeight(true);
+
         var offsetBottom = jQuery('.page_footer').outerHeight(true) + jQuery('.page_copyright').outerHeight(true);
 
-        $affixAside.affix({
-          offset: {
-            top: offsetTop,
-            bottom: offsetBottom
-          },
-        });
+        $affixAside.data('bs.affix').options.offset.top = offsetTop;
+        $affixAside.data('bs.affix').options.offset.bottom = offsetBottom;
 
-        jQuery(window).on('resize', function() {
-          $affixAside.css({"width": "", "left": ""});
-
-          if( $affixAside.hasClass('affix')) {
-            //returning sidebar in top position if it is sticked because of unexpacted behavior
-            $affixAside.removeClass("affix").css("left", "").addClass("affix-top");
-          }
-
-          var offsetTop = jQuery('.page_topline').outerHeight(true)
-                  + jQuery('.page_toplogo').outerHeight(true)
-                  + jQuery('.page_header').outerHeight(true)
-                  + jQuery('.page_breadcrumbs').outerHeight(true)
-                  + jQuery('.blog_slider').outerHeight(true);
-          var offsetBottom = jQuery('.page_footer').outerHeight(true)
-                  + jQuery('.page_copyright').outerHeight(true);
-
-          $affixAside.data('bs.affix').options.offset.top = offsetTop;
-          $affixAside.data('bs.affix').options.offset.bottom = offsetBottom;
-
-          $affixAside.affix('checkPosition');
-
-        });
-
-    }//eof checking of affix sidebar existing
+        $affixAside.affix('checkPosition');
+      });
+    }
   }
 
   //helper functions to init elements only when they appears in viewport (jQUery.appear plugin)
@@ -309,50 +308,18 @@
       }
     });
 
-    //toTop
     if (jQuery().UItoTop) {
       jQuery().UItoTop({ easingType: 'easeInOutQuart' });
     }
 
-    //parallax
     if (jQuery().parallax) {
       jQuery('.parallax').parallax("50%", 0.01);
     }
 
-    ////////////////////////////////////////
-    //init Bootstrap JS components//
-    ////////////////////////////////////////
-    //bootstrap collapse - show first tab
     jQuery('.panel-group').each(function() {
       jQuery(this).find('a').first().filter('.collapsed').trigger('click');
     });
-    //tooltip
-    if (jQuery().tooltip) {
-      jQuery('[data-toggle="tooltip"]').tooltip();
-    }
 
-    /////////
-    //SHOP///
-    /////////
-    jQuery('#toggle_shop_view').on('click', function (e) {
-      e.preventDefault();
-      jQuery(this).toggleClass('grid-view');
-      jQuery('#products').toggleClass('grid-view list-view');
-    });
-    //zoom image
-    if (jQuery().elevateZoom) {
-      jQuery('#product-image').elevateZoom({
-        gallery: 'product-image-gallery',
-        cursor: 'pointer',
-        galleryActiveClass: 'active',
-        responsive:true,
-        loadingIcon: 'img/AjaxLoader.gif'
-      });
-    }
-
-    //////////////
-    //flexslider//
-    //////////////
     if (jQuery().flexslider) {
       var $introSlider = jQuery(".intro_section .flexslider");
       $introSlider.each(function () {
