@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css" rel="stylesheet" />
 </head>
 
@@ -219,7 +219,7 @@
           <div class="col-md-4 col-sm-6 to_animate">
             <div class="widget_text">
               <h3 class="widget-title">Susisiekite su mumis</h3>
-              <p>Drobės g. 66, Kaunas LT-45181</p>
+              <p>Sandėlių g. 9, Kaunas LT-45190</p>
               <ul class="list1 no-bullets">
                 <li>
                   <i class="rt-icon2-device-phone highlight"></i> +370 37 300816
@@ -284,18 +284,18 @@
 <script src="js/vendor/jquery.appear.js"></script>
 <script src="js/vendor/jquery-ui.min.js"></script>
 <script src="js/main.js"></script>
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWx2aW50YSIsImEiOiJjand1amE5dDEwMTE3NDhwbnljZGUwNDdqIn0.eTwOwbLGuxpVcHyJwOfvcg';
 document.addEventListener('DOMContentLoaded', function () {
   var map = L.map('map')
-    .setView([54.8713037,23.9666924], 16)
-    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+    .setView([54.87127708836854, 23.930518582142966], 16)
+    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v12'));
 
-  L.marker([54.8707504, 23.9551493])
-    .bindTooltip('Drobės g. 66, Kaunas LT-45181')
+  L.marker([54.8715975, 23.9447214])
+    .bindTooltip('Sandėlių g. 9, Kaunas LT-45190')
     .addTo(map);
 });
 </script>
